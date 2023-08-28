@@ -1,13 +1,60 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    box-sizing: border-box;
+}
+.CardContainer {
+    /* width: 100%;
+    height: auto; */
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 20px; */
+}
+.Card {
+    background-color: white;
+    width: 200px;
+    height: 300px;
+    border: solid plum;
+    margin: 20px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.Card-image {
+    background-color: white;
+    width: auto;
+    height: 65%;
+    object-fit: contain;
+    border: solid black;
+    justify-content: center;
 }
+
+.Card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.Card-content {
+    width: auto;
+    height: 35%;
+    object-fit: contain;
+    justify-content: center;
+}
+
+.Card-content h3{
+    font-size: 15px;
+    margin-top: 5px;
+    height: 30%;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 5px;
+}
+
+.Card-content p {
+    margin-top: 40px;
+    height: 30%;
+    width: 100%;
+    object-fit: contain;
+}
+
+

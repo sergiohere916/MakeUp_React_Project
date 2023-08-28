@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { useEffect, useState } from 'react';
+import CosmeticsContainer from "./Components/CosmeticsContainer";
 
 function App() {
+  const [cosmeticsList, setCosmeticsList] = useState([]);
+  const [luxuryListindexes, setLuxuryListIndexes] = useState([0,6]);
+
+  useEffect(() => {
+    fetch("http://makeup-api.herokuapp.com/api/v1/products.json")
+    .then(r => r.json())
+    .then(cosmeticsData => setCosmeticsList(cosmeticsData))
+  }, [])
+
+
+  let cosmeticsListCopy = [...cosmeticsList];
+  const cosmeticsByHighestPrice = cosmeticsListCopy.sort((a,b) => b.price - a.price)
+  const luxuryCosmeticsList = cosmeticsByHighestPrice.slice(luxuryListindexes[0], luxuryListindexes[1]);
+  
+
+  function scrollThroughItems() {
+    luxuryListindexes[0] +=6;
+    luxuryListindexes[1] +=6;
+    setLuxuryListIndexes([luxuryListindexes[0], luxuryListindexes[1]]);
+  }
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Luxury Items:</h1>
+      <CosmeticsContainer luxuryCosmetics={luxuryCosmeticsList} scrollThroughItems={scrollThroughItems}/>
     </div>
   );
 }
