@@ -21,6 +21,7 @@ App will display an extensive makeup catalog, allowing users to search throughou
 - Rows will display different products types
 - Features to filter search by product type, brand, and price
 - Routing to different sections of the page
+- Sort Items by price
 
 ### Authors
 Team 1: Sergio Heredia, Shaine Waters, Idalis Valadez, Bailey Bell
