@@ -9,5 +9,5 @@
 
 http://makeup-api.herokuapp.com/
 
-Documentaion http://makeup-api.herokuapp.com/documents
+Documentation http://makeup-api.herokuapp.com/documents
 
