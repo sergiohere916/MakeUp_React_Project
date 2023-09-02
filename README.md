@@ -207,7 +207,8 @@ JSON Structure:
 },
 
 ## WireFrame
-![image](https://github.com/sergiohere916/MakeUp_React_Project/assets/137942550/f00bb999-9e57-4163-b86b-09fc733cc41d)
+![Project2-Wireframe](https://github.com/sergiohere916/MakeUp_React_Project/assets/139524475/0f677d90-14e6-490a-b1e3-3852654b79a5)
+
 
 ## MVP
 - Display images of makeup catalog
