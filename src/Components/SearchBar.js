@@ -1,5 +1,6 @@
 import React from "react";
-// import {BsSearchHeart} from 'react-icons/bs'
+import {BsSearchHeart} from 'react-icons/bs'
+
 
 function SearchBar({updateSearch, filterCosmetics}) {
 
@@ -12,7 +13,7 @@ function SearchBar({updateSearch, filterCosmetics}) {
             value={filterCosmetics}
             onChange={handleChange}
             />
-            <button id="SearchButton"></button>
+            <button id="SearchButton">{BsSearchHeart}</button>
         </div>
     )
 }
