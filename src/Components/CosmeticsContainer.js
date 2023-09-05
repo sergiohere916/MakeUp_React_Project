@@ -18,42 +18,42 @@ function CosmeticsContainer({ luxuryCosmetics, faceList, lipsList, eyesList, scr
 
     return (
         <div>
+            <div className="h2"><h2>Luxury</h2></div>
             <div className="CardContainer">   
-            <h2>Luxury</h2>
             {cosmeticsCards}
+            </div>
             <MoreButton 
                 scrollThroughMoreItems={scrollThroughMoreItems} 
                 scrollThroughPreviousItems={scrollThroughPreviousItems} 
                 row="luxury"
             />
-            </div>
+             <div className="h2"><h2>Face</h2></div>
             <div className="CardContainer">
-            <h2>Face</h2>
             {faceCards}
+            </div>
             <MoreButton 
                 scrollThroughMoreItems={scrollThroughMoreItems}
                 scrollThroughPreviousItems={scrollThroughPreviousItems}
                 row="face"
             /> 
-            </div>
+             <div className="h2"><h2>Eyes</h2></div>
             <div className="CardContainer">
-                <h2>Eyes</h2>
                 {eyesCards}
-                <MoreButton 
-                    scrollThroughMoreItems={scrollThroughMoreItems}
-                    scrollThroughPreviousItems={scrollThroughPreviousItems}
-                    row="eyes"
-                />  
             </div>
+            <MoreButton 
+                scrollThroughMoreItems={scrollThroughMoreItems}
+                scrollThroughPreviousItems={scrollThroughPreviousItems}
+                row="eyes"
+            />  
+             <div className="h2"><h2>Lips</h2></div>
             <div className="CardContainer">
-            <h2>Lips</h2>
             {lipsCards}
-                <MoreButton 
-                    scrollThroughMoreItems={scrollThroughMoreItems}
-                    scrollThroughPreviousItems={scrollThroughPreviousItems}
-                    row="lips"
-                />  
             </div>
+            <MoreButton 
+                scrollThroughMoreItems={scrollThroughMoreItems}
+                scrollThroughPreviousItems={scrollThroughPreviousItems}
+                row="lips"
+            />  
         </div>
     )
 }

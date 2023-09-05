@@ -35,15 +35,27 @@ body {
     object-fit: contain;
 }
 
+.MoreButtons {
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+}
+
+
+
 .CardContainer {
     /* width: 100%;
     height: auto; */
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    display: flex;
     /* display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 20px; */
+    margin: 20px; */
 }
 .Card {
     background-color: white;
@@ -102,11 +114,33 @@ body {
 } */
 
 #Favorite-Icon {
-    width: 20px;
-    height: 20px;
+    width: 5px;
+    height: 5px;
     object-fit: contain;
+    margin-top: 30px;
     margin-left: 10px;
     margin-right: 10px;
+    align-items: left;
 
 }
+
+.h2 {
+    justify-content: center;
+    text-align: center;
+    font-family: perpetua;
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+  .My-Collection {
+    /* display: flex; */
+    justify-content: center;
+  }
+  .CollectionTitle {
+    justify-content: center;
+    text-align: center;
+    font-family: perpetua;
+    font-size: 45px;
+    margin-top: 20px;
+  }
 

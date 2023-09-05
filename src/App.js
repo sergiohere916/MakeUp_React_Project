@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect, useState } from 'react';
 import CosmeticsContainer from "./Components/CosmeticsContainer";
 import Header from "./Components/Header";
+import MyCollection from "./Components/MyCollection";
 
 function App() {
   const [cosmeticsList, setCosmeticsList] = useState([]);
@@ -10,6 +11,7 @@ function App() {
   const [lipsListindexes, setLipsListIndexes] = useState([0,5]);
   const [eyesListindexes, setEyesListIndexes] = useState([0,5]);
   const [filterCosmetics, setFilterCosmetics] = useState([])
+  const [MyCollectionList, setMyCollectionList] = useState([{name: "mascara", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYIzZ_lJm7jto98KMhHMkOgDZWCWIQ5R2lTTceV6DI-3gOVEBDqFCOMndDrTAVtLYkq8I&usqp=CAU"}, { name: "Eye-Liner", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRQUpQzwNvNiC-hCas1lrVVpWbuAl3ajtilA&usqp=CAU"  }, ])
   const API = "http://makeup-api.herokuapp.com/api/v1/products.json"
 
   useEffect(() => {
@@ -107,6 +109,9 @@ function App() {
   return (
     <div className="App">
       <Header/>
+      <MyCollection
+        MyCollectionList={MyCollectionList} 
+      /> 
       <CosmeticsContainer 
         luxuryCosmetics={luxuryCosmeticsList} 
         faceList={faceList} 

@@ -1,4 +1,5 @@
 import React from "react";
+// import {BsSearchHeart} from 'react-icons/bs'
 
 function SearchBar({updateSearch, filterCosmetics}) {
 
@@ -11,8 +12,7 @@ function SearchBar({updateSearch, filterCosmetics}) {
             value={filterCosmetics}
             onChange={handleChange}
             />
-            <button id="SearchButton"><img src="https://media.discordapp.net/attachments/1147172028114272277/1148679251130847294/search.png?width=450&height=450"/>
-</button>
+            <button id="SearchButton"></button>
         </div>
     )
 }
