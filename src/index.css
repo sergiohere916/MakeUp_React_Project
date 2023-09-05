@@ -1,11 +1,46 @@
 * {
     box-sizing: border-box;
 }
+
+body {
+    background-color: pink;
+}
+
+#Header {
+    height: 100px;
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+}
+
+#SearchBar {
+    margin: 20px;
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+#SearchButton {
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: flex;
+}
+
+#SearchButton img {
+    position: relative;
+    width: 100%;
+    height: 25px;
+    object-fit: contain;
+}
+
 .CardContainer {
     /* width: 100%;
     height: auto; */
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     /* display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -53,8 +88,13 @@
 .Card-content p {
     margin-top: 40px;
     height: 30%;
-    width: 100%;
+    width: 50%;
     object-fit: contain;
+    display:flex;
+    flex-direction: row;
 }
 
+#Favorite-Icon {
+
+}
 

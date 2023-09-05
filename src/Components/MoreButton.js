@@ -1,16 +1,24 @@
 import React from "react";
 
-function MoreButton({scrollThroughItems}) {
+function MoreButton({scrollThroughMoreItems, scrollThroughPreviousItems}) {
 
-    function handleClick() {
-        scrollThroughItems();
+    function handleMoreClick() {
+        scrollThroughMoreItems();
     }   
     
-    
+    function handleLessClick() {
+        scrollThroughPreviousItems();
+    }
+
     return (
-        <button onClick={handleClick}>
-            View More
-        </button>
+        <div className="MoreButtons">
+            <button onClick={handleLessClick}>
+                View Previous
+            </button>
+            <button onClick={handleMoreClick}>
+                View More
+            </button>
+        </div>
     )
 }
 

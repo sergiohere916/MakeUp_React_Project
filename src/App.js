@@ -1,10 +1,11 @@
 import React from "react";
 import { useEffect, useState } from 'react';
 import CosmeticsContainer from "./Components/CosmeticsContainer";
+import Header from "./Components/Header";
 
 function App() {
   const [cosmeticsList, setCosmeticsList] = useState([]);
-  const [luxuryListindexes, setLuxuryListIndexes] = useState([0,6]);
+  const [luxuryListindexes, setLuxuryListIndexes] = useState([0,5]);
 
   useEffect(() => {
     fetch("http://makeup-api.herokuapp.com/api/v1/products.json")
@@ -18,17 +19,26 @@ function App() {
   const luxuryCosmeticsList = cosmeticsByHighestPrice.slice(luxuryListindexes[0], luxuryListindexes[1]);
   
 
-  function scrollThroughItems() {
-    luxuryListindexes[0] +=6;
-    luxuryListindexes[1] +=6;
+  function scrollThroughMoreItems() {
+    luxuryListindexes[0] +=5;
+    luxuryListindexes[1] +=5;
     setLuxuryListIndexes([luxuryListindexes[0], luxuryListindexes[1]]);
+  }
+
+  function scrollThroughPreviousItems() {
+    if (luxuryListindexes[0] > 0) {
+      luxuryListindexes[0] -=5;
+      luxuryListindexes[1] -=5;
+      setLuxuryListIndexes([luxuryListindexes[0], luxuryListindexes[1]])
+    }
   }
 
 
   return (
     <div className="App">
+      <Header/>
       <h1>Luxury Items:</h1>
-      <CosmeticsContainer luxuryCosmetics={luxuryCosmeticsList} scrollThroughItems={scrollThroughItems}/>
+      <CosmeticsContainer luxuryCosmetics={luxuryCosmeticsList} scrollThroughMoreItems={scrollThroughMoreItems} scrollThroughPreviousItems={scrollThroughPreviousItems}/>
     </div>
   );
 }

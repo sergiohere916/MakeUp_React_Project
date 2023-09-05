@@ -11,6 +11,7 @@ function CosmeticsCard({cosmetic}) {
             <div className="Card-content">
                 <h3>{name}</h3>
                 <p>Price: ${parseFloat(price)}</p>
+                <p id="Favorite-Icon">♡</p>
             </div>
         </div>
     )
