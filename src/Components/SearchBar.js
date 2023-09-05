@@ -1,10 +1,11 @@
 import React from "react";
+import {BsSearchHeart} from "react-icons/bs"
 
 function SearchBar() {
     return(
         <div id="SearchBar">
             <input type="text"/>
-            <button id="SearchButton"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX_FbatSHKsRFAvgEx26fMNQOeibgxPhwxPqtqVfJ6tA&s"/></button>
+            <button id="SearchButton">{BsSearchHeart}</button>
         </div>
     )
 }
