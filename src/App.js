@@ -79,6 +79,9 @@ function App() {
     }
   }
   
+  function onClickHeartAddToCollection(savedProduct) {
+    setMyCollectionList([...myCollectionList, savedProduct]);
+  }
   //Row1
   let cosmeticsListCopy = [...cosmeticsList];
   const cosmeticsByHighestPrice = cosmeticsListCopy.sort((a,b) => b.price - a.price)
@@ -126,6 +129,7 @@ function App() {
         eyesList={eyesList}
         scrollThroughMoreItems={scrollThroughMoreItems} 
         scrollThroughPreviousItems={scrollThroughPreviousItems}
+        onClickHeartAddToCollection={onClickHeartAddToCollection}
       />
     </div>
   );

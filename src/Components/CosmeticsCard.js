@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {BsSuitHeart, BsSuitHeartFill} from 'react-icons/bs'
 
-function CosmeticsCard({cosmetic}) {
+function CosmeticsCard({cosmetic, onClickHeartAddToCollection}) {
     const {id, brand, name, product_type, price, description, api_featured_image} = cosmetic
     const [favorite, setFavorite] = useState(true)
 
@@ -20,7 +20,7 @@ function CosmeticsCard({cosmetic}) {
             })
         })
         .then(r => r.json())
-        .then(mySavedProduct => console.log(mySavedProduct))
+        .then(mySavedProduct => onClickHeartAddToCollection(mySavedProduct))
     }
 
     const favoriteClass = favorite ? "favorite" : "not-favorite"

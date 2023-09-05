@@ -2,18 +2,18 @@ import React from "react";
 import CosmeticsCard from "./CosmeticsCard";
 import MoreButton from "./MoreButton";
 
-function CosmeticsContainer({ luxuryCosmetics, faceList, lipsList, eyesList, scrollThroughMoreItems, scrollThroughPreviousItems}) {
+function CosmeticsContainer({ luxuryCosmetics, faceList, lipsList, eyesList, scrollThroughMoreItems, scrollThroughPreviousItems, onClickHeartAddToCollection}) {
 
-    const cosmeticsCards = luxuryCosmetics.map((cosmetic) => <CosmeticsCard key={cosmetic.id} cosmetic={cosmetic}/>)
+    const cosmeticsCards = luxuryCosmetics.map((cosmetic) => <CosmeticsCard key={cosmetic.id} cosmetic={cosmetic} onClickHeartAddToCollection={onClickHeartAddToCollection}/>)
     const faceCards = faceList.map((cosmetic) => {
-        return <CosmeticsCard key={cosmetic.id} cosmetic={cosmetic}/>
+        return <CosmeticsCard key={cosmetic.id} cosmetic={cosmetic} onClickHeartAddToCollection={onClickHeartAddToCollection}/>
     })
     const lipsCards = lipsList.map((cosmetic) => {
-        return <CosmeticsCard key={cosmetic.id} cosmetic={cosmetic} />
+        return <CosmeticsCard key={cosmetic.id} cosmetic={cosmetic} onClickHeartAddToCollection={onClickHeartAddToCollection}/>
     })
 
     const eyesCards = eyesList.map((cosmetic) => {
-        return <CosmeticsCard  key={cosmetic.id} cosmetic={cosmetic}/>
+        return <CosmeticsCard  key={cosmetic.id} cosmetic={cosmetic} onClickHeartAddToCollection={onClickHeartAddToCollection}/>
     })
 
     return (

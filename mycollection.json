@@ -17,6 +17,33 @@
       "description": "Directly inspired by runway shows, the Couture Colour Wardrobe palette teams fresh and natural colours with vibrant and sophisticated shades to create countless custom makeup looks to suit any moment.",
       "expiration": "",
       "id": 2
+    },
+    {
+      "name": "BB Cream",
+      "product_type": "foundation",
+      "brand": "nyx",
+      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/902/original/open-uri20171224-4-1v926lt?1514082599",
+      "description": "Perfect the “no makeup” look with our BB Cream. Specially formulated without oil, this mineral-infused formula hydrates the skin and helps the complexion appear smoother. Wear it as a primer under your foundation, or alone for a touch of lightweight color.",
+      "expiration": "",
+      "id": 3
+    },
+    {
+      "name": "High Definition Finishing Powder Mini",
+      "product_type": "foundation",
+      "brand": "nyx",
+      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/934/original/open-uri20171224-4-1b8y84r?1514082683",
+      "description": "Your favorite beauty essential is now available in a convenient travel sized mini. A lightweight, translucent finishing powder that helps soften the appearance of fine lines and pores. This silky pressed powder has a fresh matte finish.",
+      "expiration": "",
+      "id": 4
+    },
+    {
+      "name": "Mistura 6-in-1 Beauty Solution",
+      "product_type": "eyeshadow",
+      "brand": "mistura",
+      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/287/original/data?1514063294",
+      "description": "Mistura’s incredible 6-in-1 Beauty Solution powder provides a natural luminosity and pearl-like finish to all skin types and colours. Blend this illuminating powder into your cheeks, forehead, eyes and lips for an instant full-coverage glow.  This amazing formula will hide blemishes, mute rosacea, glide over fine lines and wrinkles and bring an instant brilliance to pale skin tones. On darker skin tones, the 6-in-1 Beauty Solution creates a pearl-like shimmer and gives an instant air-brushed finish. A simply sensational beauty solution.Included:\n\nMistura’s 6-in-1 Beauty Solution Powder (12 g)\nMirrored Compact\nEye Applicator \nLip Applicator\nLuxury Retractable Brush\nLuxury Drawstring Pouch\n\nFeatures:\n\nReduces the appearance of fine lines and wrinkles\nWill not settle into pores\nLeaves behind an ultra-light silky finish\nHypo-allergenic, fragrance free, anti-inflammatory\nWipes off easily with water - no chemicals required\nLong lasting mineral base\nOne shade for ALL skin tones\nOne easy step\nInstant results\n\n\nApplication InstructionsBuff the 6-in-1 Beauty Solution® into the skin in a circular motion, starting on the outside of your face near your cheekbone and swirling as you go. Buff around your face and then your forehead, cheeks, and nose. Use over Mistura’s Luminada® illuminating moisturizer, as an eye shadow with the applicator provided or as a lip colour over Mistura’s Vitamin E moisture base. A little goes a long way so please be careful!Ingredients:  Talc, Triethylhexanoin, Zinc Stearate, Tocopherol Acetate, Methylparaben, Propylparaben, Imidazolidinyl Urea, +/- (May Contain): Mica (77019), Titanium Dioxide (77891), Iron Oxides (77491, 77492, 77499), Ultramarines (77007), Yellow 5 Lake (19140:1), Blue 1 Lake (42090:2)",
+      "expiration": "",
+      "id": 5
     }
   ]
 }
