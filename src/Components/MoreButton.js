@@ -1,13 +1,13 @@
 import React from "react";
 
-function MoreButton({scrollThroughMoreItems, scrollThroughPreviousItems}) {
+function MoreButton({scrollThroughMoreItems, scrollThroughPreviousItems, row}) {
 
     function handleMoreClick() {
-        scrollThroughMoreItems();
+        scrollThroughMoreItems(row);
     }   
     
     function handleLessClick() {
-        scrollThroughPreviousItems();
+        scrollThroughPreviousItems(row);
     }
 
     return (
