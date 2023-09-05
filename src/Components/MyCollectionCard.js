@@ -1,10 +1,10 @@
 import React from "react";
 
-function MyCollectionCard ({products}){
-    const {name, img} = products
+function MyCollectionCard ({product}){
+    const {name, image, product_type, brand, description, expiration } = product
     return (
         <div>
-            <img src={img} alt={name}/>
+            <img src={image} alt={name}/>
             <h3>{name}</h3>
         </div>
     )

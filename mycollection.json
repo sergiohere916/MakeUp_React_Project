@@ -1,0 +1,13 @@
+{
+  "MyCollection": [
+    {
+      "name": "soft & natural brows kit",
+      "product_type": "eyebrow",
+      "brand": "benefit",
+      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/625/original/open-uri20171223-4-m5burj?1514061760",
+      "description": "goof-proof kit for natural-looking brows",
+      "expiration": "",
+      "id": 1
+    }
+  ]
+}

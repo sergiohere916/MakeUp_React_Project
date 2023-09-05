@@ -11,18 +11,25 @@ function App() {
   const [lipsListindexes, setLipsListIndexes] = useState([0,5]);
   const [eyesListindexes, setEyesListIndexes] = useState([0,5]);
   const [filterCosmetics, setFilterCosmetics] = useState([])
-  const [MyCollectionList, setMyCollectionList] = useState([{name: "mascara", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYIzZ_lJm7jto98KMhHMkOgDZWCWIQ5R2lTTceV6DI-3gOVEBDqFCOMndDrTAVtLYkq8I&usqp=CAU"}, { name: "Eye-Liner", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRQUpQzwNvNiC-hCas1lrVVpWbuAl3ajtilA&usqp=CAU"  }, ])
+  const [myCollectionList, setMyCollectionList] = useState([])
   const API = "http://makeup-api.herokuapp.com/api/v1/products.json"
 
   useEffect(() => {
-    fetch(API)
+    fetch(" http://localhost:6001/MyCollection")
     .then(r => r.json())
-    .then(cosmeticsData => {
-      setCosmeticsList(cosmeticsData)
+    .then(myCollectionItems => {
+      fetch(API)
+      .then(r => r.json())
+      .then(cosmeticsData => {
+      setCosmeticsList(cosmeticsData);
+      setMyCollectionList(myCollectionItems);
     })
+    })
+    
   }, [])
 
   console.log(cosmeticsList);
+  
 
   function scrollThroughMoreItems(rowToMove) {
     if (rowToMove === "luxury") {
@@ -110,7 +117,7 @@ function App() {
     <div className="App">
       <Header/>
       <MyCollection
-        MyCollectionList={MyCollectionList} 
+        MyCollectionList={myCollectionList} 
       /> 
       <CosmeticsContainer 
         luxuryCosmetics={luxuryCosmeticsList} 
