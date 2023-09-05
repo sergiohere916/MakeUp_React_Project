@@ -133,8 +133,21 @@ body {
   }
 
   .My-Collection {
-    /* display: flex; */
+    /* display: flex;
+    flex-direction: column;  */
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
     justify-content: center;
+    align-self: center;
+    height: auto;
+   /* display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; */
+
+
+    
   }
   .CollectionTitle {
     justify-content: center;
@@ -142,5 +155,12 @@ body {
     font-family: perpetua;
     font-size: 45px;
     margin-top: 20px;
+  }
+  .My-Collection-Cards {
+    border: solid black;
+    width: 100%;
+    justify-content: center;
+    background-color: white;
+    display: flex;
   }
 

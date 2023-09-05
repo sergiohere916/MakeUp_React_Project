@@ -8,7 +8,9 @@ function MyCollection({MyCollectionList}) {
             <div className="CollectionTitle">
                 <h2>My Collection</h2>
             </div>
-            {myFavs}
+            <div className="My-Collection-Cards">
+                {myFavs}
+            </div>
         </div>
       
     )
