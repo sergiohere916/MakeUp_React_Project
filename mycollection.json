@@ -1,0 +1,24 @@
+{
+    "MyCollection": [
+        {
+           "id": "1",
+           "name": "",
+           "product_type": "",
+           "image": "",
+           "expiration": "",
+           "info": "",
+           "description": "",
+           "price": ""
+        },
+        {
+           "id": "2",
+           "name": "",
+           "product_type": "",
+           "image": "",
+           "expiration": "",
+           "info": "",
+           "description": "",
+           "price": ""
+        }
+   ]
+}
