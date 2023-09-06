@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import CosmeticsContainer from "./Components/CosmeticsContainer";
 import Header from "./Components/Header";
 import MyCollection from "./Components/MyCollection";
+import SearchBar from "./Components/SearchBar";
 
 function App() {
   const [cosmeticsList, setCosmeticsList] = useState([]);
@@ -10,7 +11,12 @@ function App() {
   const [faceListindexes, setFaceListIndexes] = useState([0,5]);
   const [lipsListindexes, setLipsListIndexes] = useState([0,5]);
   const [eyesListindexes, setEyesListIndexes] = useState([0,5]);
-  const [filterCosmetics, setFilterCosmetics] = useState([])
+
+  // SEARCH BAR FILTER LISTS BELOW
+  const [searchValue, setSearchValue] = useState('')
+
+  
+  // MY COLLECTION LIST BELOW
   const [myCollectionList, setMyCollectionList] = useState([])
   const API = "http://makeup-api.herokuapp.com/api/v1/products.json"
 
@@ -28,7 +34,7 @@ function App() {
     
   }, [])
 
-  console.log(cosmeticsList);
+  // console.log(cosmeticsList);
   
 
   function scrollThroughMoreItems(rowToMove) {
@@ -82,23 +88,38 @@ function App() {
   function onClickHeartAddToCollection(savedProduct) {
     setMyCollectionList([...myCollectionList, savedProduct]);
   }
+
+  function onSubmitUpdateExpiration(updatedItem) {
+    const newCollection = myCollectionList.map((item) => {
+      if (item.id !== updatedItem.id) {
+        return item;
+      } else {
+        return updatedItem;
+      }
+    })
+    setMyCollectionList([...newCollection]);
+  }
+
   //Row1
   let cosmeticsListCopy = [...cosmeticsList];
   const cosmeticsByHighestPrice = cosmeticsListCopy.sort((a,b) => b.price - a.price)
   const luxuryCosmeticsList = cosmeticsByHighestPrice.slice(luxuryListindexes[0], luxuryListindexes[1]);
+  
   //Row2
   const faceProducts = cosmeticsList.filter((cosmetic) => {
     const product = cosmetic.product_type.toLowerCase()
     return (product.includes("blush") || (product.includes("foundation")) || (product.includes("concealer")));
   })
-  const faceList = faceProducts.slice(faceListindexes[0], faceListindexes[1]);
+  const filterFaceCosmetic = faceProducts.filter((faceProduct) => faceProduct.name.toLowerCase().includes(searchValue.toLowerCase()))
+  const filterFaceCosmeticList = filterFaceCosmetic.slice(faceListindexes[0], faceListindexes[1]); 
   
   //Row3
   const lipProducts = cosmeticsList.filter((cosmetic) => {
     const product = cosmetic.product_type.toLowerCase()
     return (product.includes("lipstick") || (product.includes("lip_liner")))
   })
-  const lipsList = lipProducts.slice(lipsListindexes[0], lipsListindexes[1]);
+  const filterLipsCosmetic = lipProducts.filter((lipsProduct) => lipsProduct.name.toLowerCase().includes(searchValue.toLowerCase()))
+  const filterLipsCosmeticList = filterLipsCosmetic.slice(lipsListindexes[0], lipsListindexes[1]);
 
   
   //Row4
@@ -106,27 +127,41 @@ function App() {
     const product = cosmetic.product_type.toLowerCase()
     return (product.includes("mascara") || (product.includes("eyebrow")) || (product.includes("eyeliner")) || (product.includes("eyeshadow")))
   })
-  const eyesList = eyeProducts.slice(eyesListindexes[0], eyesListindexes[1]);
- 
- 
- 
- 
-  // search to recontinue upon completing lists
-  // const filterCosmetics = cosmeticsData.filter((cosmeticsData) => cosmeticsData.name.toLowerCase().includes(setFilterCosmetics.toLowerCase()))
 
-  // let updateSearch = (SearchBar) => {setFilterCosmetics(SearchBar)}
+  const filterEyesCosmetic = eyeProducts.filter((eyesProduct) => eyesProduct.name.toLowerCase().includes(searchValue.toLowerCase()))
+  const filterEyesCosmeticList = filterEyesCosmetic.slice(eyesListindexes[0], eyesListindexes[1]);
+ 
+ 
+ 
+// search to recontinue upon completing lists
+  const filterLuxuryCosmetic = luxuryCosmeticsList.filter((luxuryCosmeticsList) => luxuryCosmeticsList.name.toLowerCase().includes(searchValue.toLowerCase()))
+  
+  
+  const updateSearch = ((searchBar) => {setSearchValue(searchBar)})
+
+
+
+  function handleDeleteItem(deletedItemId) {
+    const updateCollection = myCollectionList.filter((item) => item.id !== deletedItemId)
+    setMyCollectionList(updateCollection)
+  }
 
   return (
     <div className="App">
-      <Header/>
+      <Header
+      updateSearch={updateSearch} 
+      searchValue={searchValue}
+      />
       <MyCollection
         MyCollectionList={myCollectionList} 
+        handleDeleteItem={handleDeleteItem}
+        onSubmitUpdateExpiration={onSubmitUpdateExpiration}
       /> 
       <CosmeticsContainer 
-        luxuryCosmetics={luxuryCosmeticsList} 
-        faceList={faceList} 
-        lipsList={lipsList}
-        eyesList={eyesList}
+        luxuryCosmetics={filterLuxuryCosmetic} 
+        faceList={filterFaceCosmeticList} 
+        lipsList={filterLipsCosmeticList}
+        eyesList={filterEyesCosmeticList}
         scrollThroughMoreItems={scrollThroughMoreItems} 
         scrollThroughPreviousItems={scrollThroughPreviousItems}
         onClickHeartAddToCollection={onClickHeartAddToCollection}

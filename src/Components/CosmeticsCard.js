@@ -16,6 +16,7 @@ function CosmeticsCard({cosmetic, onClickHeartAddToCollection}) {
                 brand: brand,
                 image: api_featured_image,
                 description: description,
+                dateOfOpening: "",
                 expiration: ""
             })
         })

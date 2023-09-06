@@ -1,9 +1,9 @@
 import React from "react";
 import MyCollectionCard from "./MyCollectionCard";
 
-function MyCollection({MyCollectionList}) {
+function MyCollection({MyCollectionList, handleDeleteItem, onSubmitUpdateExpiration}) {
 
-    const myFavs = MyCollectionList.map((product) => <MyCollectionCard key={product.name} product={product}/>)
+    const myFavs = MyCollectionList.map((product) => <MyCollectionCard key={product.name} product={product} onDelete={handleDeleteItem} onSubmitUpdateExpiration={onSubmitUpdateExpiration}/>)
     return (
         <div className="My-Collection">
             <div className="CollectionTitle">

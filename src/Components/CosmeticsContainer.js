@@ -19,7 +19,7 @@ function CosmeticsContainer({ luxuryCosmetics, faceList, lipsList, eyesList, scr
     return (
         <div>
             <div className="h2"><h2>Luxury</h2></div>
-            <div className="CardContainer">   
+            <div className="CardContainer">
             {cosmeticsCards}
             </div>
             <MoreButton 

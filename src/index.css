@@ -17,6 +17,7 @@ body {
     text-align: center;
     font-family: cursive;
 }
+
 .logo {
     color: rgb(175, 33, 94);
     text-align: center;
@@ -227,6 +228,11 @@ body {
 
 .My-Collection-Cards img {
     object-fit: cover;
+    position: relative; 
     width: 200px;
     height: 200px;
+}
+
+.delete-icon {
+    color: rgb(175, 33, 94);
 }

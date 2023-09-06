@@ -2,19 +2,21 @@ import React from "react";
 import {BsSearch} from 'react-icons/bs'
 
 
-function SearchBar({updateSearch, filterCosmetics}) {
-    
+function SearchBar({updateSearch, searchValue}) {
 
-    const handleChange = (e) => {updateSearch(e.targert.value)}
+// const filters = [filterFaceCosmetics, filterLuxuryCosmetics]
+
+
+    const handleChange = (e) => {updateSearch(e.target.value)}
     return(
-        <div id="SearchBar">
+        <div id="searchBar">
             <input type="text"
-            placeholder="Search"
+            placeholder="search"
             id="search"
-            value={filterCosmetics}
+            value={searchValue}
             onChange={handleChange}
-        />
-        <BsSearch id="SearchButton"/>
+            />
+            <BsSearch id="SearchButton"/>
         </div>
     )
 }
