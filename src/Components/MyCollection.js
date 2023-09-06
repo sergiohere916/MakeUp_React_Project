@@ -3,7 +3,7 @@ import MyCollectionCard from "./MyCollectionCard";
 
 function MyCollection({MyCollectionList, handleDeleteItem, onSubmitUpdateExpiration}) {
 
-    const myFavs = MyCollectionList.map((product) => <MyCollectionCard key={product.name} product={product} onDelete={handleDeleteItem} onSubmitUpdateExpiration={onSubmitUpdateExpiration}/>)
+    const myFavs = MyCollectionList.map((product) => <MyCollectionCard key={product.id} product={product} onDelete={handleDeleteItem} onSubmitUpdateExpiration={onSubmitUpdateExpiration}/>)
     return (
         <div className="My-Collection">
             <div className="CollectionTitle">

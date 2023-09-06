@@ -20,6 +20,7 @@ function App() {
   
   // MY COLLECTION LIST BELOW
   const [myCollectionList, setMyCollectionList] = useState([])
+  
   const API = "http://makeup-api.herokuapp.com/api/v1/products.json"
 
   useEffect(() => {
