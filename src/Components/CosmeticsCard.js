@@ -36,8 +36,8 @@ function CosmeticsCard({cosmetic, onClickHeartAddToCollection}) {
                 {name}
                 </h3>
                 <div className={favoriteClass} >
-                    {favorite ? <BsSuitHeart onClick={handleClick} /> 
-                            : <BsSuitHeartFill onClick={handleClick}/>}
+                    {favorite ? <BsSuitHeartFill id="Fav-Heart"onClick={handleClick} /> 
+                            : <BsSuitHeartFill id="NFav-Heart" onClick={handleClick}/>}
                 </div>
                 
                 {/* <i>{briefDescription}</i> */}

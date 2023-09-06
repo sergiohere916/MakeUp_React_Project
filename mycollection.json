@@ -1,34 +1,154 @@
 {
   "mycollection": [
     {
-      "name": "Mineral Blush",
-      "product_type": "blush",
-      "brand": "marienatie",
-      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/026/original/open-uri20180630-4-18e9ua7?1530390377",
-      "description": "Formulated to reduce the appearance of pores while creating a long-lasting natural finish.  This MarieNatie brush protects skin with SPF15.  Sericite mica is great for absorbing oil and won’t clog up pores.  Mica is a natural mineral that helps to enhance the skin tone.",
+      "name": "Lippie Stix",
+      "product_type": "lipstick",
+      "brand": "colourpop",
+      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/046/original/open-uri20180708-4-1f333k1?1531086651",
+      "description": "Lippie Stix Formula contains Vitamin E, Mango, Avocado, and Shea butter for added comfort and moisture. None of our Lippie formulas contain any nasty ingredients like Parabens or Sulfates.",
+      "dateOfOpening": "",
+      "expiration": "",
+      "id": 1
+    },
+    {
+      "name": "Lippie Pencil",
+      "product_type": "lip_liner",
+      "brand": "colourpop",
+      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/048/original/open-uri20180708-4-13okqci?1531093614",
+      "description": "Lippie Pencil A long-wearing and high-intensity lip pencil that glides on easily and prevents feathering. Many of our Lippie Stix have a coordinating Lippie Pencil designed to compliment it perfectly, but feel free to mix and match!",
       "dateOfOpening": "",
       "expiration": "",
       "id": 2
     },
     {
-      "name": "Proof It! Waterproof Mascara Top Coat",
-      "product_type": "mascara",
-      "brand": "nyx",
-      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/996/original/data?1514082786",
-      "description": "With just two swipes our lash top coat transforms your favorite mascara from being conventional to waterproof! Our formula helps prevent clumping and leaves lashes looking gorgeous.",
+      "name": "Blotted Lip",
+      "product_type": "lipstick",
+      "brand": "colourpop",
+      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/047/original/open-uri20180708-4-e7idod?1531087336",
+      "description": "Blotted Lip Sheer matte lipstick that creates the perfect popsicle pout! Formula is lightweight, matte and buildable for light to medium coverage.",
       "dateOfOpening": "",
       "expiration": "",
       "id": 3
     },
     {
-      "name": "Stick Blush",
-      "product_type": "blush",
-      "brand": "nyx",
-      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/914/original/open-uri20171224-4-15kclri?1514082620",
-      "description": "Add a touch of color with our creamy and extremely pigmented Stick Blush! Available in eight rich shades! Apply and receive the perfect glow every day!",
+      "name": "B Glossy Lip Gloss",
+      "product_type": "lipstick",
+      "brand": "sally b's skin yummies",
+      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/037/original/open-uri20180630-4-1fa1p2f?1530390384",
+      "description": "Intensify your natural lip color with Sally B's B Glossy Lip Gloss, an organic lip gloss that adds a silky smooth hint of color and shimmer to lips. Formulated with 98% certified organic, moisture-rich ingredients our B Glossy Lip Gloss works to enrich lip health for lips that feel good and look even better.",
       "dateOfOpening": "",
       "expiration": "",
       "id": 4
+    },
+    {
+      "name": "B Glossy Lip Gloss",
+      "product_type": "lipstick",
+      "brand": "sally b's skin yummies",
+      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/037/original/open-uri20180630-4-1fa1p2f?1530390384",
+      "description": "Intensify your natural lip color with Sally B's B Glossy Lip Gloss, an organic lip gloss that adds a silky smooth hint of color and shimmer to lips. Formulated with 98% certified organic, moisture-rich ingredients our B Glossy Lip Gloss works to enrich lip health for lips that feel good and look even better.",
+      "dateOfOpening": "",
+      "expiration": "",
+      "id": 5
+    },
+    {
+      "name": "Lipstick",
+      "product_type": "lipstick",
+      "brand": "boosh",
+      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/044/original/data?1531071233",
+      "description": "All of our products are free from lead and heavy metals, parabens, phthalates, artificial colourants, and synthetic fragrances.  Boosh lipstick glides on smoothly for clean & protective SPF coverage. They are filled with hydrating oils and butters to preserve and enhance your lips natural surface. Organic sweet orange oil gives a light and cheerful scent.",
+      "dateOfOpening": "",
+      "expiration": "",
+      "id": 6
+    },
+    {
+      "name": "Lipstick",
+      "product_type": "lipstick",
+      "brand": "boosh",
+      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/044/original/data?1531071233",
+      "description": "All of our products are free from lead and heavy metals, parabens, phthalates, artificial colourants, and synthetic fragrances.  Boosh lipstick glides on smoothly for clean & protective SPF coverage. They are filled with hydrating oils and butters to preserve and enhance your lips natural surface. Organic sweet orange oil gives a light and cheerful scent.",
+      "dateOfOpening": "",
+      "expiration": "",
+      "id": 7
+    },
+    {
+      "name": "B Glossy Lip Gloss",
+      "product_type": "lipstick",
+      "brand": "sally b's skin yummies",
+      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/037/original/open-uri20180630-4-1fa1p2f?1530390384",
+      "description": "Intensify your natural lip color with Sally B's B Glossy Lip Gloss, an organic lip gloss that adds a silky smooth hint of color and shimmer to lips. Formulated with 98% certified organic, moisture-rich ingredients our B Glossy Lip Gloss works to enrich lip health for lips that feel good and look even better.",
+      "dateOfOpening": "",
+      "expiration": "",
+      "id": 8
+    },
+    {
+      "name": "B Glossy Lip Gloss",
+      "product_type": "lipstick",
+      "brand": "sally b's skin yummies",
+      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/037/original/open-uri20180630-4-1fa1p2f?1530390384",
+      "description": "Intensify your natural lip color with Sally B's B Glossy Lip Gloss, an organic lip gloss that adds a silky smooth hint of color and shimmer to lips. Formulated with 98% certified organic, moisture-rich ingredients our B Glossy Lip Gloss works to enrich lip health for lips that feel good and look even better.",
+      "dateOfOpening": "",
+      "expiration": "",
+      "id": 9
+    },
+    {
+      "name": "Lippie Stix",
+      "product_type": "lipstick",
+      "brand": "colourpop",
+      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/046/original/open-uri20180708-4-1f333k1?1531086651",
+      "description": "Lippie Stix Formula contains Vitamin E, Mango, Avocado, and Shea butter for added comfort and moisture. None of our Lippie formulas contain any nasty ingredients like Parabens or Sulfates.",
+      "dateOfOpening": "",
+      "expiration": "",
+      "id": 10
+    },
+    {
+      "name": "Blotted Lip",
+      "product_type": "lipstick",
+      "brand": "colourpop",
+      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/047/original/open-uri20180708-4-e7idod?1531087336",
+      "description": "Blotted Lip Sheer matte lipstick that creates the perfect popsicle pout! Formula is lightweight, matte and buildable for light to medium coverage.",
+      "dateOfOpening": "",
+      "expiration": "",
+      "id": 11
+    },
+    {
+      "name": "Lippie Pencil",
+      "product_type": "lip_liner",
+      "brand": "colourpop",
+      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/048/original/open-uri20180708-4-13okqci?1531093614",
+      "description": "Lippie Pencil A long-wearing and high-intensity lip pencil that glides on easily and prevents feathering. Many of our Lippie Stix have a coordinating Lippie Pencil designed to compliment it perfectly, but feel free to mix and match!",
+      "dateOfOpening": "",
+      "expiration": "",
+      "id": 12
+    },
+    {
+      "name": "Lippie Pencil",
+      "product_type": "lip_liner",
+      "brand": "colourpop",
+      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/048/original/open-uri20180708-4-13okqci?1531093614",
+      "description": "Lippie Pencil A long-wearing and high-intensity lip pencil that glides on easily and prevents feathering. Many of our Lippie Stix have a coordinating Lippie Pencil designed to compliment it perfectly, but feel free to mix and match!",
+      "dateOfOpening": "",
+      "expiration": "",
+      "id": 13
+    },
+    {
+      "name": "Lipstick",
+      "product_type": "lipstick",
+      "brand": "boosh",
+      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/044/original/data?1531071233",
+      "description": "All of our products are free from lead and heavy metals, parabens, phthalates, artificial colourants, and synthetic fragrances.  Boosh lipstick glides on smoothly for clean & protective SPF coverage. They are filled with hydrating oils and butters to preserve and enhance your lips natural surface. Organic sweet orange oil gives a light and cheerful scent.",
+      "dateOfOpening": "",
+      "expiration": "",
+      "id": 14
+    },
+    {
+      "name": "Lipstick",
+      "product_type": "lipstick",
+      "brand": "boosh",
+      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/044/original/data?1531071233",
+      "description": "All of our products are free from lead and heavy metals, parabens, phthalates, artificial colourants, and synthetic fragrances.  Boosh lipstick glides on smoothly for clean & protective SPF coverage. They are filled with hydrating oils and butters to preserve and enhance your lips natural surface. Organic sweet orange oil gives a light and cheerful scent.",
+      "dateOfOpening": "",
+      "expiration": "",
+      "id": 15
     }
   ]
 }

@@ -13,8 +13,8 @@ function MoreButton({scrollThroughMoreItems, scrollThroughPreviousItems, row}) {
 
     return (
         <div className="MoreButtons">
-            <BiSolidLeftArrow onClick={handleLessClick} className='left-arrow'/>
-            <BiSolidRightArrow onClick={handleMoreClick} className='right-arrow'/>
+            {row === "Collection" ? (<BiSolidLeftArrow onClick={handleLessClick} className='lc-arrow'/>) : (<BiSolidLeftArrow onClick={handleLessClick} className='left-arrow'/>) }
+            {row === "Collection" ? (<BiSolidRightArrow onClick={handleMoreClick} className='rc-arrow'/>) : (<BiSolidRightArrow onClick={handleMoreClick} className='right-arrow'/>) }
         </div>
     )
 }

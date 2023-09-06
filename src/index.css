@@ -3,9 +3,7 @@
 }
 
 body {
-    background-image: url(https://img.freepik.com/free-photo/makeup-cosmetic-beauty-products-pink-background_23-2148113421.jpg);
-    background-position: right;
-    background-repeat: no-repeat;
+   
     background-color: rgb(255, 255, 255);
     margin: 0;
 }
@@ -85,17 +83,34 @@ body {
     justify-content: space-between;
 }
 
+
 .left-arrow{
     position: absolute;
     left: 100px;
     top: 700px;
+    font-size: 30px;
 
 }
+.lc-arrow {
+    position: absolute;
+    color: rgb(51, 49, 49);
+    left: 300px;
+    top: 280px;
+    font-size: 40px;
+}
 
+.rc-arrow {
+    position: absolute;
+    right: 300px;
+    top: 280px;
+    font-size: 40px;
+    color: rgb(51, 49, 49);
+}
 .right-arrow{
     position: absolute;
     right: 100px;
     top: 700px;
+    font-size: 30px;
 }
 
 .CardContainer {
@@ -139,25 +154,38 @@ body {
     width: auto;
     height: 35%;
     object-fit: contain;
+    background-color: salmon;
+    /* background-image: -webkit-linear-gradient(#fff8e7,#e8dcca); */
     justify-content: center;
     display: flex;
 }
 
+/* #Fav-Heart{
+    color: white;
+    background-size: contain;
+}
+#NFav-Heart{
+    color: pink;
+    background-size: contain;
+} */
 
 .favorite{
     margin-left: 'auto';
-    color: pink;
+    color: white;
+    stroke: gray;
+    stroke-width: 2px
     
 }
 
 .favorite:hover {
-    color:rgb(90, 87, 89);
+    color:rgb(248, 216, 238);
 }
 
 .not-favorite{
     margin-left: 'auto';
-    color: pink;
+    color: pink;   
 }
+ 
 
 .Card-content h3{
     font-size: 15px;
@@ -193,7 +221,6 @@ body {
     margin-left: 5px;
     margin-right: 5px;
     align-items: left;
-    background-color: white;
     border: solid black;
 
 }
@@ -210,15 +237,16 @@ body {
   .My-Collection {
     /* display: flex;
     flex-direction: column;  */
-    background-image: url(https://pngtree.com/freebackground/high-end-atmosphere-simple-wind-makeup-area-banner_1056850.html);
+    background-image: url(https://e0.pxfuel.com/wallpapers/865/117/desktop-wallpaper-cosmetic-makeup.jpg);
     background-repeat: no-repeat;
-    background-position: right;
-    background-size: auto;
+    background-position: center;
+    background-size: cover;
     display: grid;
     grid-template-rows: repeat(1, 1fr);
     justify-content: center;
     align-self: center;
     height: auto;
+    align-items: center
    /* display: flex;
     flex-direction: column; 
     justify-content: center; 
@@ -241,14 +269,22 @@ body {
     border: solid  rgb(247, 227, 227);
     width: 100%;
     margin: auto;
+    height: auto;
     padding: 10px;
     justify-content: relative;
-    background-color: white;
+    /* background-color: white; */
+    background-image: linear-gradient(#e8dcca, #fff8e7, #e8dcca);
     object-fit: cover;
+    align-items: center;
     text-align: center;
     text-overflow: ellipsis;
     display: flex;
   }
+
+
+
+
+
 
 .My-Collection-Cards img {
     object-fit: cover;

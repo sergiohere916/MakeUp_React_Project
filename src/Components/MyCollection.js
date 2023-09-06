@@ -1,7 +1,8 @@
 import React from "react";
 import MyCollectionCard from "./MyCollectionCard";
+import MoreButton from "./MoreButton";
 
-function MyCollection({MyCollectionList, handleDeleteItem, onSubmitUpdateExpiration}) {
+function MyCollection({MyCollectionList, handleDeleteItem, onSubmitUpdateExpiration, scrollThroughMoreItems,scrollThroughPreviousItems, row }) {
 
     const myFavs = MyCollectionList.map((product) => <MyCollectionCard key={product.id} product={product} onDelete={handleDeleteItem} onSubmitUpdateExpiration={onSubmitUpdateExpiration}/>)
     return (
@@ -12,6 +13,7 @@ function MyCollection({MyCollectionList, handleDeleteItem, onSubmitUpdateExpirat
             <div className="My-Collection-Cards">
                 {myFavs}
             </div>
+            <MoreButton scrollThroughMoreItems={scrollThroughMoreItems} scrollThroughPreviousItems={scrollThroughPreviousItems} row={row}/>
         </div>
       
     )

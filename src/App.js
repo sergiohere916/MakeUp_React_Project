@@ -21,6 +21,7 @@ function App() {
   
   // MY COLLECTION LIST BELOW
   const [myCollectionList, setMyCollectionList] = useState([])
+  const [collectionindexes, setCollectionIndexes] = useState([0,3]) 
   
   const API = "http://makeup-api.herokuapp.com/api/v1/products.json"
 
@@ -62,8 +63,12 @@ function App() {
       eyesListindexes[0] +=5;
       eyesListindexes[1] +=5;
       setEyesListIndexes([eyesListindexes[0], eyesListindexes[1]])
+    } else if (rowToMove === "Collection") {
+      collectionindexes[0] +=3
+      collectionindexes[1] +=3
+      setCollectionIndexes([collectionindexes[0], collectionindexes[1]])
+    }
   }
-}
 
   function scrollThroughPreviousItems(rowToMove) {
     if (rowToMove === "Luxury") {
@@ -94,7 +99,13 @@ function App() {
         eyesListindexes[1] -=5;
         setEyesListIndexes([eyesListindexes[0], eyesListindexes[1]])
       }
-    }
+    } else if (rowToMove === "Collection") {
+      if (collectionindexes[0] > 0) {
+        collectionindexes[0] -=3;
+        collectionindexes[1] -=3;
+        setCollectionIndexes([collectionindexes[0], collectionindexes[1]])
+      }
+    } 
   }
   
   function onClickHeartAddToCollection(savedProduct) {
@@ -111,6 +122,9 @@ function App() {
     })
     setMyCollectionList([...newCollection]);
   }
+
+  //My Collection
+  const filterMyCollection = myCollectionList.slice(collectionindexes[0], collectionindexes[1]);
 
   //Row1
   let cosmeticsListCopy = [...cosmeticsList];
@@ -168,9 +182,12 @@ function newProduct(product) {
       searchValue={searchValue}
       />
       <MyCollection
-        MyCollectionList={myCollectionList} 
+        MyCollectionList={filterMyCollection} 
         handleDeleteItem={handleDeleteItem}
         onSubmitUpdateExpiration={onSubmitUpdateExpiration}
+        scrollThroughMoreItems={scrollThroughMoreItems} 
+        scrollThroughPreviousItems={scrollThroughPreviousItems}
+        row="Collection"
       /> 
         <Routes>
         <Route path="/cosmetics/luxury" element={

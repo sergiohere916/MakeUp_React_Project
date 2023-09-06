@@ -30,7 +30,7 @@ function MyCollectionCard ({product, onDelete, onSubmitUpdateExpiration}){
     }
 
     return (
-        <div>
+        <div id="collection-item">
             <AiOutlineDelete className = 'delete-icon' onClick={handleDelete}/>
             <img src={image} alt={name}/>
             <h3>{name}</h3>

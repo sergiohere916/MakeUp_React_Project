@@ -22,3 +22,4 @@ function CosmeticsContainer({ list, row, scrollThroughMoreItems, scrollThroughPr
 }
 
 export default CosmeticsContainer;
+
