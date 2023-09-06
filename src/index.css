@@ -3,6 +3,9 @@
 }
 
 body {
+    background-image: url(https://img.freepik.com/free-photo/makeup-cosmetic-beauty-products-pink-background_23-2148113421.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
     background-color: rgb(255, 255, 255);
     margin: 0;
 }
@@ -207,6 +210,10 @@ body {
   .My-Collection {
     /* display: flex;
     flex-direction: column;  */
+    background-image: url(https://pngtree.com/freebackground/high-end-atmosphere-simple-wind-makeup-area-banner_1056850.html);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: auto;
     display: grid;
     grid-template-rows: repeat(1, 1fr);
     justify-content: center;
@@ -235,10 +242,11 @@ body {
     width: 100%;
     margin: auto;
     padding: 10px;
-    justify-content: space-around;
+    justify-content: relative;
     background-color: white;
     object-fit: cover;
-    text-align: justify;
+    text-align: center;
+    text-overflow: ellipsis;
     display: flex;
   }
 
@@ -251,4 +259,40 @@ body {
 
 .delete-icon {
     color: rgb(175, 33, 94);
+}
+
+.submit {
+    color: rgb(175, 33, 94);
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    overflow:auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.Submit-Form{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+
+#Form-Button {
+    background-color: rgb(247, 227, 227);
+    margin-top:20px;
+    margin-bottom: 100px;
+}
+
+#NewForm{
+    width: 500px;
+}
+
+.form-input {
+    outline: 0;
+    border: 0;
+    border-bottom: 2px solid plum
 }

@@ -19,6 +19,16 @@
       "dateOfOpening": "",
       "expiration": "",
       "id": 3
+    },
+    {
+      "name": "Stick Blush",
+      "product_type": "blush",
+      "brand": "nyx",
+      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/914/original/open-uri20171224-4-15kclri?1514082620",
+      "description": "Add a touch of color with our creamy and extremely pigmented Stick Blush! Available in eight rich shades! Apply and receive the perfect glow every day!",
+      "dateOfOpening": "",
+      "expiration": "",
+      "id": 4
     }
   ]
 }

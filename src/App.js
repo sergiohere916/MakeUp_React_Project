@@ -151,7 +151,9 @@ function App() {
   
   const updateSearch = ((searchBar) => {setSearchValue(searchBar)})
 
-
+function newProduct(product) {
+  setMyCollectionList([...myCollectionList, product])
+}
 
   function handleDeleteItem(deletedItemId) {
     const updateCollection = myCollectionList.filter((item) => item.id !== deletedItemId)
@@ -209,7 +211,8 @@ function App() {
           }/>
           <Route path="/submit" element={
             <SubmitMakeUp
-          />
+              newProduct={newProduct}
+            />
           }/>
          </Routes>
     </div>
