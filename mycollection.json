@@ -1,5 +1,5 @@
-
-  "MyCollection": [
+{
+  "mycollection": [
     {
       "name": "soft & natural brows kit",
       "product_type": "eyebrow",
@@ -8,6 +8,15 @@
       "description": "goof-proof kit for natural-looking brows",
       "expiration": "",
       "id": 1
+    },
+    {
+      "name": "Couture Colour Wardrobe palette",
+      "product_type": "eyeshadow",
+      "brand": "dior",
+      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/697/original/open-uri20171223-4-1tgdgkb?1514062732",
+      "description": "Directly inspired by runway shows, the Couture Colour Wardrobe palette teams fresh and natural colours with vibrant and sophisticated shades to create countless custom makeup looks to suit any moment.",
+      "expiration": "",
+      "id": 2
     }
   ]
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import {BiSolidLeftArrow, BiSolidRightArrow} from 'react-icons/bi'
 
 function MoreButton({scrollThroughMoreItems, scrollThroughPreviousItems, row}) {
 
@@ -12,12 +13,8 @@ function MoreButton({scrollThroughMoreItems, scrollThroughPreviousItems, row}) {
 
     return (
         <div className="MoreButtons">
-            <button onClick={handleLessClick}>
-                View Previous
-            </button>
-            <button onClick={handleMoreClick}>
-                View More
-            </button>
+            <BiSolidLeftArrow onClick={handleLessClick} className='left-arrow'/>
+            <BiSolidRightArrow onClick={handleMoreClick} className='right-arrow'/>
         </div>
     )
 }

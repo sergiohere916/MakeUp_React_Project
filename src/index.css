@@ -3,13 +3,33 @@
 }
 
 body {
-    background-color: rgb(250, 209, 216);
+    background-color: rgb(255, 255, 255);
     margin: 0;
 }
 
 #Header {
-    background-color: whitesmoke;
+    background-color: rgb(247, 227, 227);
     padding: 0.02cm;
+}
+
+.logo-name {
+    color: rgb(175, 33, 94);
+    text-align: center;
+    font-family: cursive;
+}
+.logo {
+    color: rgb(175, 33, 94);
+    text-align: center;
+    height: 5vh;
+    animation: rotation 5s infinite linear;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
 }
 
 #SearchBar {
@@ -21,21 +41,28 @@ body {
     
 }
 
+
+#search {
+    outline: 0;
+    border: 0;
+    border-bottom: 2px solid plum
+}
+
+#search ::placeholder {
+    color:rgb(175, 33, 94)
+}
+
 #SearchButton {
     width: auto;
     height: auto;
     object-fit: contain;
     display: flex;
+    color: rgb(181, 78, 162)
 }
 
-#SearchButton img {
-    position: relative;
-    width: 100%;
-    height: 25px;
-    object-fit: contain;
-}
 
 .MoreButtons {
+    color: rgb(175, 33, 94);
     width: auto;
     height: auto;
     object-fit: contain;
@@ -43,7 +70,13 @@ body {
     justify-content: center;
 }
 
+.left-arrow{
+    position: relative;
+}
 
+.right-arrow{
+    position: relative;
+}
 
 .CardContainer {
     /* width: 100%;
@@ -58,7 +91,7 @@ body {
     margin: 20px; */
 }
 .Card {
-    background-color: white;
+    /* background-color: rgb(238, 183, 183); */
     width: 200px;
     height: 300px;
     border: solid plum;
@@ -66,11 +99,13 @@ body {
 }
 
 .Card-image {
-    background-color: white;
-    width: auto;
-    height: 65%;
-    object-fit: contain;
-    border: solid black;
+    /* background-color: white; */
+    float: center;
+    align-items: center;
+    width: 190px;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid  rgb(247, 227, 227);
     justify-content: center;
 }
 
@@ -85,6 +120,23 @@ body {
     height: 35%;
     object-fit: contain;
     justify-content: center;
+    display: flex;
+}
+
+
+.favorite{
+    margin-left: 'auto';
+    color: pink;
+    
+}
+
+.favorite:hover {
+    color:rgb(90, 87, 89);
+}
+
+.not-favorite{
+    margin-left: 'auto';
+    color: pink;
 }
 
 .Card-content h3{
@@ -132,6 +184,7 @@ body {
     font-family: perpetua;
     font-size: 30px;
     margin-top: 20px;
+    color:  rgb(175, 33, 94);
   }
 
   .My-Collection {
@@ -157,11 +210,23 @@ body {
     font-family: perpetua;
     font-size: 45px;
     margin-top: 20px;
+    color: rgb(175, 33, 94);
   }
+
   .My-Collection-Cards {
-    border: solid black;
+    border: solid  rgb(247, 227, 227);
     width: 100%;
-    justify-content: center;
+    margin: auto;
+    padding: 10px;
+    justify-content: space-around;
     background-color: white;
+    object-fit: cover;
+    text-align: justify;
     display: flex;
   }
+
+.My-Collection-Cards img {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+}
