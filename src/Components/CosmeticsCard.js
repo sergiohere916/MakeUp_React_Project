@@ -26,15 +26,6 @@ function CosmeticsCard({cosmetic, onClickHeartAddToCollection}) {
 
     const favoriteClass = favorite ? "favorite" : "not-favorite"
 
-
-// trying to include the description, doesn't work. get back to tomorrow
-    // const briefDescription = () => {
-    //     const sentence = description.substring(0,6) + '...'
-    //     if (description.length > 6) {
-    //         return sentence
-    //     }
-    // }
-
     return (
         <div className="Card">
             <div className="Card-image">

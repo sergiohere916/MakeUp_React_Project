@@ -16,7 +16,7 @@ function MyCollectionCard ({product, onDelete, onSubmitUpdateExpiration}){
     function handleChange(e) {
         setDateInput(e.target.value);
     }
-    console.log(dateInput);
+    // console.log(dateInput);
 
     function handleSubmit(e) {
         e.preventDefault()

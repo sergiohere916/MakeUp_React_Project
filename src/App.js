@@ -4,6 +4,7 @@ import CosmeticsContainer from "./Components/CosmeticsContainer";
 import Header from "./Components/Header";
 import MyCollection from "./Components/MyCollection";
 import SearchBar from "./Components/SearchBar";
+import {Routes, Route} from "react-router-dom";
 
 function App() {
   const [cosmeticsList, setCosmeticsList] = useState([]);
@@ -39,45 +40,53 @@ function App() {
 
   function scrollThroughMoreItems(rowToMove) {
     if (rowToMove === "luxury") {
+      console.log("luxury is moving");
       luxuryListindexes[0] +=5;
       luxuryListindexes[1] +=5;
       setLuxuryListIndexes([luxuryListindexes[0], luxuryListindexes[1]]); 
     } else if (rowToMove === "face") {
+      console.log("face is moving");
       faceListindexes[0] +=5;
       faceListindexes[1] +=5;
       setFaceListIndexes([faceListindexes[0], faceListindexes[1]])
     } else if (rowToMove === "lips") {
+      console.log("lips is moving");
       lipsListindexes[0] +=5;
       lipsListindexes[1] +=5;
-      setFaceListIndexes([lipsListindexes[0], lipsListindexes[1]])
+      setLipsListIndexes([lipsListindexes[0], lipsListindexes[1]])
     } else if (rowToMove === "eyes") {
+      console.log("eyes is moving");
       eyesListindexes[0] +=5;
       eyesListindexes[1] +=5;
-      setFaceListIndexes([eyesListindexes[0], eyesListindexes[1]])
+      setEyesListIndexes([eyesListindexes[0], eyesListindexes[1]])
   }
 }
 
   function scrollThroughPreviousItems(rowToMove) {
     if (rowToMove === "luxury") {
       if (luxuryListindexes[0] > 0) {
+        console.log("luxury is moving");
         luxuryListindexes[0] -=5;
         luxuryListindexes[1] -=5;
         setLuxuryListIndexes([luxuryListindexes[0], luxuryListindexes[1]])
       } 
     } else if (rowToMove === "face") {
       if (faceListindexes[0] > 0) {
+        console.log("face is moving");
         faceListindexes[0] -=5;
         faceListindexes[1] -=5;
         setFaceListIndexes([faceListindexes[0], faceListindexes[1]])
       }
     } else if (rowToMove === "lips") {
       if (lipsListindexes[0] > 0) {
+        console.log("lips is moving");
         lipsListindexes[0] -=5;
         lipsListindexes[1] -=5;
         setLipsListIndexes([lipsListindexes[0], lipsListindexes[1]])
       }
     } else if (rowToMove === "eyes") {
       if (eyesListindexes[0] > 0) {
+        console.log("eyes is moving");
         eyesListindexes[0] -=5;
         eyesListindexes[1] -=5;
         setEyesListIndexes([eyesListindexes[0], eyesListindexes[1]])
@@ -152,20 +161,43 @@ function App() {
       updateSearch={updateSearch} 
       searchValue={searchValue}
       />
-      <MyCollection
-        MyCollectionList={myCollectionList} 
-        handleDeleteItem={handleDeleteItem}
-        onSubmitUpdateExpiration={onSubmitUpdateExpiration}
-      /> 
-      <CosmeticsContainer 
-        luxuryCosmetics={filterLuxuryCosmetic} 
-        faceList={filterFaceCosmeticList} 
-        lipsList={filterLipsCosmeticList}
-        eyesList={filterEyesCosmeticList}
-        scrollThroughMoreItems={scrollThroughMoreItems} 
-        scrollThroughPreviousItems={scrollThroughPreviousItems}
-        onClickHeartAddToCollection={onClickHeartAddToCollection}
-      />
+      <Routes>
+        <Route path="/collection" element={
+          <MyCollection
+            MyCollectionList={myCollectionList} 
+            handleDeleteItem={handleDeleteItem}
+            onSubmitUpdateExpiration={onSubmitUpdateExpiration}
+          /> 
+        }/>
+        </Routes>
+          <CosmeticsContainer 
+            list={filterLuxuryCosmetic} 
+            scrollThroughMoreItems={scrollThroughMoreItems} 
+            scrollThroughPreviousItems={scrollThroughPreviousItems}
+            onClickHeartAddToCollection={onClickHeartAddToCollection}
+            row="luxury"
+          />
+          <CosmeticsContainer
+            list={filterFaceCosmeticList} 
+            scrollThroughMoreItems={scrollThroughMoreItems} 
+            scrollThroughPreviousItems={scrollThroughPreviousItems}
+            onClickHeartAddToCollection={onClickHeartAddToCollection}
+            row="face"
+          />
+          <CosmeticsContainer
+            list={filterLipsCosmeticList}
+            scrollThroughMoreItems={scrollThroughMoreItems} 
+            scrollThroughPreviousItems={scrollThroughPreviousItems}
+            onClickHeartAddToCollection={onClickHeartAddToCollection}
+            row="lips"
+          />
+          <CosmeticsContainer
+            list={filterEyesCosmeticList}
+            scrollThroughMoreItems={scrollThroughMoreItems} 
+            scrollThroughPreviousItems={scrollThroughPreviousItems}
+            onClickHeartAddToCollection={onClickHeartAddToCollection}
+            row="eyes"
+          />
     </div>
   );
 }
