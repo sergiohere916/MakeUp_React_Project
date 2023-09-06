@@ -3,9 +3,7 @@ import MyCollectionCard from "./MyCollectionCard";
 
 function MyCollection({MyCollectionList}) {
 
-    const myFavs = MyCollectionList.map((products) => <MyCollectionCard key={products.name} products={products}/>)
-
-    
+    const myFavs = MyCollectionList.map((product) => <MyCollectionCard key={product.name} product={product}/>)
     return (
         <div className="My-Collection">
             <div className="CollectionTitle">
