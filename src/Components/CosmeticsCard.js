@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import {BsSuitHeart, BsSuitHeartFill} from 'react-icons/bs'
 
 function CosmeticsCard({cosmetic}) {
     const {id, brand, name, product_type, price, description, api_featured_image} = cosmetic
@@ -24,6 +25,15 @@ function CosmeticsCard({cosmetic}) {
 
     const favoriteClass = favorite ? "favorite" : "not-favorite"
 
+
+// trying to include the description, doesn't work. get back to tomorrow
+    // const briefDescription = () => {
+    //     const sentence = description.substring(0,6) + '...'
+    //     if (description.length > 6) {
+    //         return sentence
+    //     }
+    // }
+
     return (
         <div className="Card">
             <div className="Card-image">
@@ -33,9 +43,12 @@ function CosmeticsCard({cosmetic}) {
                 <h3>
                 {name}
                 </h3>
-                <input type="button" value="♡" onClick={handleClick}/>
+                <div className={favoriteClass} >
+                    {favorite ? <BsSuitHeart onClick={handleClick} /> 
+                            : <BsSuitHeartFill onClick={handleClick}/>}
+                </div>
                 
-                {/* <p>Price: ${parseFloat(price)}</p> */}
+                {/* <i>{briefDescription}</i> */}
             </div>
         </div>
     )
