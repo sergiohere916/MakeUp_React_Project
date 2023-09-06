@@ -279,6 +279,8 @@ body {
     text-align: center;
     text-overflow: ellipsis;
     display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
 
