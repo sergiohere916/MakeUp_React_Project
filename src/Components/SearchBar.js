@@ -1,5 +1,5 @@
 import React from "react";
-import {BsSearchHeart} from 'react-icons/bs'
+import {FiSearch} from 'react-icons/fi'
 
 
 function SearchBar({updateSearch, filterCosmetics}) {
@@ -13,7 +13,7 @@ function SearchBar({updateSearch, filterCosmetics}) {
             value={filterCosmetics}
             onChange={handleChange}
             />
-            <button id="SearchButton">{BsSearchHeart}</button>
+            <button id="SearchButton">{FiSearch}</button>
         </div>
     )
 }

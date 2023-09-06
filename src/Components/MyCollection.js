@@ -2,6 +2,7 @@ import React from "react";
 import MyCollectionCard from "./MyCollectionCard";
 
 function MyCollection({MyCollectionList}) {
+
     const myFavs = MyCollectionList.map((product) => <MyCollectionCard key={product.name} product={product}/>)
     return (
         <div className="My-Collection">
