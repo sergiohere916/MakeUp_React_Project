@@ -21,6 +21,9 @@ function NavBar({updateSearch, searchValue}) {
             <Link to="/cosmetics/lips" className="lips">
                 Lips
             </Link>
+            <Link to="/submit" className='submit'>
+                Add a Product
+            </Link>
             <SearchBar className="search-bar"
                 updateSearch={updateSearch} 
                 searchValue={searchValue}

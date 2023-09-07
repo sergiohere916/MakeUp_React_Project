@@ -5,6 +5,7 @@ import Header from "./Components/Header";
 import MyCollection from "./Components/MyCollection";
 import {Routes, Route} from "react-router-dom";
 import NavBar from "./Components/NavBar";
+import SubmitMakeUp from "./Components/SubmitMakeUp";
 
 
 function App() {
@@ -203,6 +204,10 @@ function App() {
             scrollThroughPreviousItems={scrollThroughPreviousItems}
             onClickHeartAddToCollection={onClickHeartAddToCollection}
             row="Eyes"
+          />
+          }/>
+          <Route path="/submit" element={
+            <SubmitMakeUp
           />
           }/>
          </Routes>

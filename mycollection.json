@@ -1,16 +1,6 @@
 {
   "mycollection": [
     {
-      "name": "Pressed Foundation",
-      "product_type": "foundation",
-      "brand": "marienatie",
-      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/028/original/open-uri20180630-4-1u219s0?1530390378",
-      "description": "A pressed foundation by MarieNatie providing a silky and flawless finish – it provides great coverage and protects skin with SPF 10.  Titanium dioxide acts as an absorbent of oil and jojoba oil helps to cleanse and moisturize the skin.",
-      "dateOfOpening": "",
-      "expiration": "2023-09-06",
-      "id": 1
-    },
-    {
       "name": "Mineral Blush",
       "product_type": "blush",
       "brand": "marienatie",

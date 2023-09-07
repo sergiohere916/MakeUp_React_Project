@@ -77,16 +77,22 @@ body {
     width: auto;
     height: auto;
     object-fit: contain;
+    overflow:auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .left-arrow{
-    position: relative;
+    position: absolute;
+    left: 100px;
+    top: 700px;
+
 }
 
 .right-arrow{
-    position: relative;
+    position: absolute;
+    right: 100px;
+    top: 700px;
 }
 
 .CardContainer {
