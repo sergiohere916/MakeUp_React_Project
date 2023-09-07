@@ -1,74 +1,54 @@
 {
   "mycollection": [
     {
-      "name": "Liquid Liner",
-      "product_type": "eyeliner",
-      "brand": "zorah biocosmetiques",
-      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/041/original/open-uri20180630-4-1huiv9y?1530390387",
-      "description": "<strong>12 hours of long-lasting</strong> intense color, transfer-free (leaves no trace on crease above the eyelid) <strong>Pure Light Capture®</strong> <strong>minerals</strong> deliver color and radiance. Silky lines and refreshingly light, Pure Argan eyeliner leaves a weightless feel on the eyelids.<p align='LEFT'>Natural cosmetic certified by Ecocert Greenlife according to Ecocert Standard available at: http://cosmetiques.ecocert.com</p>98% of the total ingredients are from natural origin 5% of total ingredients are from organic farming",
+      "name": "Invincible Fullest Coverage Foundation",
+      "product_type": "foundation",
+      "brand": "nyx",
+      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/901/original/open-uri20171224-4-1dx6w5e?1514082597",
+      "description": "Have something to hide? We’ve got just the thing for you. Now available in five more shades to accommodate a wider range of skin tones, NYX Professional Makeup Invincible Fullest Coverage Foundation offers exceptional coverage with natural-looking finish. The incredibly high-pigment load has the super powers to hide even the most challenging cover-ups, including skin discolorations and more. The finished look is soft, matte, beautiful and flawless.",
       "dateOfOpening": "",
       "expiration": "",
       "id": 1
     },
     {
-      "name": "Eyeshadow",
-      "product_type": "eyeshadow",
-      "brand": "zorah biocosmetiques",
-      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/040/original/open-uri20180630-4-1afkyee?1530390386",
-      "description": "<strong>Product Description</strong>Anti-aging formula made with organic Pure Argan oil and Pure Light Capture<sup>®</sup> pigments. 24 Hour crease-free intensity (no build-up increase of eyelid), no running. Pure Light Capture® pigments deliver color and luminosity. Silky and refreshingly light feel, Pure Argan eyeshadow is weightless on the eyelids. Pure Argan eyeshadow <strong>soothes</strong>, <strong>hides redness </strong>and <strong>slows the appearance of the signs of aging on the skin.</strong><p align='LEFT'>Natural cosmetic certified by Ecocert Greenlife according to Ecocert Standard available at: http://cosmetiques.ecocert.com</p>100% of the total ingredients are from natural origin5% of total ingredients are from organic farming",
+      "name": "Mineral Stick Foundation",
+      "product_type": "foundation",
+      "brand": "nyx",
+      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/900/original/open-uri20171224-4-1byvmqd?1514082593",
+      "description": "Portable and buildable, our Mineral Stick Foundation is ideal when you’re on the move. The luxurious formula is easy to apply and extremely blendable, which allows for flawless highlighting and contouring. You can also use this versatile foundation on the entire face or in isolated areas that need a little extra attention – it’s all up to you! Our creamy foundation is now available in six new shades.",
       "dateOfOpening": "",
       "expiration": "",
       "id": 2
     },
     {
-      "name": "Couture Colour Wardrobe palette",
-      "product_type": "eyeshadow",
-      "brand": "dior",
-      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/697/original/open-uri20171223-4-1tgdgkb?1514062732",
-      "description": "Directly inspired by runway shows, the Couture Colour Wardrobe palette teams fresh and natural colours with vibrant and sophisticated shades to create countless custom makeup looks to suit any moment.",
+      "name": "NYX Ombre Lip Duo ",
+      "product_type": "lip_liner",
+      "brand": "nyx",
+      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/407/original/data?1514063319",
+      "description": "Dress your lips in two-toned style with the NYX Ombre Lip Duo.  The 2-in-1 lip colours are inspired by the Ombre trend and each lip duo features two coordinating shades of lip liner and satiny matte lipstick to create the perfect Ombre colour.Featured Colours:Pink Nude lipstick with Bright Pink lip liner",
       "dateOfOpening": "",
       "expiration": "",
       "id": 3
     },
     {
-      "name": "Couture Colour Wardrobe palette",
-      "product_type": "eyeshadow",
-      "brand": "dior",
-      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/697/original/open-uri20171223-4-1tgdgkb?1514062732",
-      "description": "Directly inspired by runway shows, the Couture Colour Wardrobe palette teams fresh and natural colours with vibrant and sophisticated shades to create countless custom makeup looks to suit any moment.",
+      "name": "NYX Ombre Lip Duo ",
+      "product_type": "lip_liner",
+      "brand": "nyx",
+      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/407/original/data?1514063319",
+      "description": "Dress your lips in two-toned style with the NYX Ombre Lip Duo.  The 2-in-1 lip colours are inspired by the Ombre trend and each lip duo features two coordinating shades of lip liner and satiny matte lipstick to create the perfect Ombre colour.Featured Colours:Pink Nude lipstick with Bright Pink lip liner",
       "dateOfOpening": "",
       "expiration": "",
       "id": 4
     },
     {
-      "name": "Couture Colour Wardrobe palette",
-      "product_type": "eyeshadow",
-      "brand": "dior",
-      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/697/original/open-uri20171223-4-1tgdgkb?1514062732",
-      "description": "Directly inspired by runway shows, the Couture Colour Wardrobe palette teams fresh and natural colours with vibrant and sophisticated shades to create countless custom makeup looks to suit any moment.",
+      "name": "NYX Ombre Blush",
+      "product_type": "blush",
+      "brand": "nyx",
+      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/474/original/data?1514063327",
+      "description": "NYX Ombre Blush is a new gradient blush inspired by the ombre trend.  This must-have formula features two silky colours blended into one perfectly coordinated shade combo.Featured Colours:Blue Toned Pink & Bright Yellow Toned Pink",
       "dateOfOpening": "",
       "expiration": "",
       "id": 5
-    },
-    {
-      "name": "cheekathon bronzer & blush palette",
-      "product_type": "bronzer",
-      "brand": "benefit",
-      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/639/original/open-uri20171223-4-1uw9qxu?1514061763",
-      "description": "“kick up your cheeks” blush kit",
-      "dateOfOpening": "",
-      "expiration": "",
-      "id": 6
-    },
-    {
-      "name": "cheekathon bronzer & blush palette",
-      "product_type": "bronzer",
-      "brand": "benefit",
-      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/639/original/open-uri20171223-4-1uw9qxu?1514061763",
-      "description": "“kick up your cheeks” blush kit",
-      "dateOfOpening": "",
-      "expiration": "",
-      "id": 7
     }
   ]
 }
