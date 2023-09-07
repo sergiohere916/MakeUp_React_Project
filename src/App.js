@@ -183,7 +183,14 @@ function App() {
   
   
   
-  const updateSearch = ((searchBar) => {setSearchValue(searchBar)})
+  const updateSearch = ((searchBar) => {
+    setSearchValue(searchBar)
+    setFaceListIndexes([0,5]);
+    setEyesListIndexes([0,5]);
+    setLipsListIndexes([0,5]);
+    setLuxuryListIndexes([0,5]);
+  
+  })
 
 function newProduct(product) {
   setMyCollectionList([...myCollectionList, product])
