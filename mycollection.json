@@ -1,3 +1,24 @@
 {
-  "mycollection": []
+  "mycollection": [
+    {
+      "name": "Mineral Blush",
+      "product_type": "blush",
+      "brand": "marienatie",
+      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/026/original/open-uri20180630-4-18e9ua7?1530390377",
+      "description": "Formulated to reduce the appearance of pores while creating a long-lasting natural finish.  This MarieNatie brush protects skin with SPF15.  Sericite mica is great for absorbing oil and won’t clog up pores.  Mica is a natural mineral that helps to enhance the skin tone.",
+      "dateOfOpening": "",
+      "expiration": "",
+      "id": 2
+    },
+    {
+      "name": "Proof It! Waterproof Mascara Top Coat",
+      "product_type": "mascara",
+      "brand": "nyx",
+      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/996/original/data?1514082786",
+      "description": "With just two swipes our lash top coat transforms your favorite mascara from being conventional to waterproof! Our formula helps prevent clumping and leaves lashes looking gorgeous.",
+      "dateOfOpening": "",
+      "expiration": "",
+      "id": 3
+    }
+  ]
 }
