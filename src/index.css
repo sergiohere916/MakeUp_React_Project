@@ -353,3 +353,20 @@ body {
     border: 0;
     border-bottom: 2px solid plum
 }
+
+.expired-item{
+    background-color: rgb(173, 173, 173);
+    margin-top: -22px;
+    margin-bottom: -22px;
+    border: 1px solid black;
+}
+.expired-item img {
+    filter: grayscale(100%);
+}
+
+.collection-item {
+    border: 1px solid black;
+}
+.collection-content {
+    
+}

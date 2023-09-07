@@ -18,8 +18,12 @@ function MyCollectionCard ({product, onDelete, onSubmitUpdateExpiration}){
     
     const endDate = new Date(formattedInputDate);
     
-    const daysBeforeExp = (Math.ceil((endDate - currentDate)/1000/60/60/24));
-    
+    let daysBeforeExp = (Math.ceil((endDate - currentDate)/1000/60/60/24)); 
+    console.log(daysBeforeExp);
+    if (daysBeforeExp === -0) {
+        daysBeforeExp = 0;
+        console.log(daysBeforeExp); 
+    }
 
     function handleDelete() {
         fetch(`http://localhost:6001/mycollection/${id}`, {
@@ -45,17 +49,21 @@ function MyCollectionCard ({product, onDelete, onSubmitUpdateExpiration}){
         .then(updatedItem => onSubmitUpdateExpiration(updatedItem))
     }
 
+    const itemType = ((daysBeforeExp > 0) ? "collection-item" : "expired-item" );
     return (
-        <div id="collection-item">
+        <div className={itemType}>
             <AiOutlineDelete className = 'delete-icon' onClick={handleDelete}/>
             <img src={image} alt={name}/>
+            {/* {daysBeforeExp === 0 ? (<h4>EXPIRED</h4>) : (null)} */}
+            <div className="collection-content">
             <h3>{name}</h3>
-            {daysBeforeExp ? (<p>Expiring in: {daysBeforeExp} day/s</p>) : (<p>Expiring in: </p>)}
-            <form onSubmit={handleSubmit}>
-                <label>Set Expiration: </label>
-                <input type="date" value={dateInput} onChange={handleChange}/>
-                <input type="submit" value="Set"/>
-            </form>
+                {daysBeforeExp || daysBeforeExp === 0 ? (<p>Expiring in: {daysBeforeExp} day/s</p>) : (<p>Expiring in: </p>)}
+                <form onSubmit={handleSubmit}>
+                    <label>Set Expiration: </label>
+                    <input type="date" value={dateInput} onChange={handleChange}/>
+                    <input type="submit" value="Set"/>
+                </form>
+            </div>
         </div>
     )
 

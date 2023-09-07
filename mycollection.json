@@ -27,8 +27,18 @@
       "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/662/original/open-uri20171223-4-b9oitk?1514062722",
       "description": "A couture makeup bag with a selection of three iconic Rouge Dior lipsticks to suit any occasion: two different rosy shades with a satiny finish for a romantic look, and the matte version of the famous 999 for flamboyant lips.",
       "dateOfOpening": "",
-      "expiration": "2023-10-04",
+      "expiration": "2023-09-08",
       "id": 3
+    },
+    {
+      "name": " Realist Invisible Setting Powder",
+      "product_type": "foundation",
+      "brand": "w3llpeople",
+      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/039/original/open-uri20180630-4-rfmkzd?1530390386",
+      "description": "<span style=\"font-weight: 400;\">Keep it real with a polished, soft-focus look using this superfine, loose mineral powder. The healing properties of organic aloe help soothe and calm stressed out skin. Instantly minimize pores, soften imperfections, and creates a matte finish with superfine powder. Use by itself for an air-brushed look, or to set foundation for ultra-long wear.</span><span style=\"font-weight: 400;\">* Set makeup or by itself for matte air-brushed effect</span><span style=\"font-weight: 400;\">* Absorbs excess oil while softening fine lines</span><span style=\"font-weight: 400;\">* Organic aloe creates radiant, rejuvenated skin</span><span style=\"font-weight: 400;\">* Hypoallergenic, Chemical Free, Cruelty Free &amp; Noncomedogenic </span><span style=\"font-weight: 400;\">* EWG Verified for non-toxic health and safety</span><span style=\"font-weight: 400;\">* Free From: Parabens, Gluten, GMO, Phthalates, Sulfates, Fragrance, Pheonoxyethanol, Dimethicone, PEG, Propylene Glycol, Butylene Glycol, Lead, Mineral Oil, Talc</span>",
+      "dateOfOpening": "",
+      "expiration": "",
+      "id": 4
     }
   ]
 }
