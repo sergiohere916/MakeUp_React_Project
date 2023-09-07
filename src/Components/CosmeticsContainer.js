@@ -8,7 +8,7 @@ function CosmeticsContainer({ list, row, scrollThroughMoreItems, scrollThroughPr
 
     return (
         <div>
-            <div className="h2"><h2>Luxury</h2></div>
+            <div className="h2"><h2>{row}</h2></div>
             <div className="CardContainer">
             {cosmeticsCards}
             </div>
