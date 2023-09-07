@@ -49,7 +49,7 @@ function MyCollectionCard ({product, onDelete, onSubmitUpdateExpiration}){
         .then(updatedItem => onSubmitUpdateExpiration(updatedItem))
     }
 
-    const itemType = ((daysBeforeExp > 0) ? "collection-item" : "expired-item" );
+    const itemType = ((daysBeforeExp !== 0) ? "collection-item" : "expired-item" );
     return (
         <div className={itemType}>
             <AiOutlineDelete className = 'delete-icon' onClick={handleDelete}/>
