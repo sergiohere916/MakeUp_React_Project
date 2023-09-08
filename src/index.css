@@ -74,28 +74,23 @@ body {
 
 #both-buttons {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     z-index: 5;
     position: relative;
 }
 
 
-
-
 .left-arrow{
-    position: absolute;
+    position: relative;
     font-size: 30px;
     color: rgb(175, 33, 94);
-    right: 1380px;
-    top: 150px;
 }
 
 .right-arrow{
-    position: absolute;
+    position: relative;
     font-size: 30px;
-    right: -10px;
     color: rgb(175, 33, 94);
-    top: 155px;
+    
 }
 
 .lc-arrow {
@@ -117,42 +112,45 @@ body {
 
 
 .CardContainer {
-    /* width: 100%;
-    height: auto; */
+    width: 90vw;
+    height: auto;
     position: relative;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     justify-content: center;
     display: flex;
-    margin-left: 20px;
-    margin-right: 20px;
+    padding: 30px;
     /* display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 20px; */
 }
+
+#container {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
 .Card {
     /* background-color: rgb(238, 183, 183); */
-    width: 200px;
+    width: 250px;
     height: 300px;
+    transition: box-shadow .3s;
     border: solid rgb(175, 33, 94);
-    margin: 20px;
+    margin: 10px;
 }
 
 .Card-image {
     /* background-color: white; */
     float: center;
-    align-items: center;
-    width: 190px;
+    align-content: center;
+    width: auto;
     height: 200px;
     object-fit: cover;
     justify-content: center;
+    text-align: center;
 }
 
-.Card {
-    transition: box-shadow .3s;
-    width: 300px;
-}
 
 .Card:hover {
     box-shadow: 0 0 15px rgba(33,33,33,.2); 
@@ -161,35 +159,39 @@ body {
 
 .Card img {
     height: 100%;
-    width: 100%;
-    object-fit: cover;
+    width: auto;
+    object-fit: contain;
 }
+
+.Card-content h3 {
+    text-overflow: ellipsis;
+    text-align: left;
+    overflow-y: clip;
+}
+
+.descrip {
+    text-overflow: ellipsis;  
+    margin-bottom: 12px;  
+    overflow-y: clip;
+    white-space: nowrap;
+}
+
 
 .Card-content {
     width: auto;
-    height: 33%;
+    height: 32.5%;
     object-fit: contain;
     background-color: rgb(234, 218, 224);
     /* background-image: -webkit-linear-gradient(#fff8e7,#e8dcca); */
     justify-content: center;
-    display: flex;
 }
 
-/* #Fav-Heart{
-    color: white;
-    background-size: contain;
-}
-#NFav-Heart{
-    color: pink;
-    background-size: contain;
-} */
 
 .favorite{
-    margin-left: 'auto';
+    text-align: right;
     color: white;
     stroke: gray;
     stroke-width: 2px
-    
 }
 
 .favorite:hover {
@@ -197,7 +199,7 @@ body {
 }
 
 .not-favorite{
-    margin-left: 'auto';
+    text-align: right;
     color: rgb(237, 50, 178);   
 }
  

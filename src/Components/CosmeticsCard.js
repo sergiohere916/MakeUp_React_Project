@@ -26,21 +26,21 @@ function CosmeticsCard({cosmetic, onClickHeartAddToCollection}) {
 
     const favoriteClass = favorite ? "favorite" : "not-favorite"
 
+
     return (
         <div className="Card">
             <div className="Card-image">
                 <img src={api_featured_image}></img>
             </div>
             <div className="Card-content">
-                <h3>
-                {name}
-                </h3>
-                <div className={favoriteClass} >
+            <div className={favoriteClass} >
                     {favorite ? <BsSuitHeartFill id="Fav-Heart"onClick={handleClick} /> 
                             : <BsSuitHeartFill id="NFav-Heart" onClick={handleClick}/>}
                 </div>
-                
-                {/* <i>{briefDescription}</i> */}
+                <h3>
+                {name}
+                </h3>
+                <p className="descrip">{description}</p>
             </div>
         </div>
     )
