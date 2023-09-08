@@ -16,7 +16,7 @@ function App() {
   const [eyesListindexes, setEyesListIndexes] = useState([0,5]);
 
   // SEARCH BAR FILTER LISTS BELOW
-  const [searchValue, setSearchValue] = useState('')
+  const [searchValue, setSearchValue] = useState("")
 
   
   // MY COLLECTION LIST BELOW
@@ -41,53 +41,72 @@ function App() {
 
   // console.log(cosmeticsList);
   
-
+  
   function scrollThroughMoreItems(rowToMove) {
     if (rowToMove === "Luxury") {
-      console.log("luxury is moving");
-      luxuryListindexes[0] +=5;
-      luxuryListindexes[1] +=5;
-      setLuxuryListIndexes([luxuryListindexes[0], luxuryListindexes[1]]); 
+      if (luxuryListindexes[1] < cosmeticsByHighestPrice.length  && searchValue.length === 0) {
+        luxuryListindexes[0] +=5;
+        luxuryListindexes[1] +=5;
+        setLuxuryListIndexes([luxuryListindexes[0], luxuryListindexes[1]]); 
+      } else if (luxuryListindexes[1] < luxuryCosmeticsList.length ) {
+        luxuryListindexes[0] +=5;
+        luxuryListindexes[1] +=5;
+        setLuxuryListIndexes([luxuryListindexes[0], luxuryListindexes[1]]);
+      }
     } else if (rowToMove === "Face") {
-      console.log("face is moving");
-      faceListindexes[0] +=5;
-      faceListindexes[1] +=5;
-      setFaceListIndexes([faceListindexes[0], faceListindexes[1]])
+      if (faceListindexes[1] < faceProducts.length && searchValue.length === 0) {
+        faceListindexes[0] +=5;
+        faceListindexes[1] +=5;
+        setFaceListIndexes([faceListindexes[0], faceListindexes[1]])
+      } else if (faceListindexes[1] < filterFaceCosmetic.length) {
+        faceListindexes[0] +=5;
+        faceListindexes[1] +=5;
+        setFaceListIndexes([faceListindexes[0], faceListindexes[1]])
+      }
     } else if (rowToMove === "Lips") {
-      console.log("lips is moving");
-      lipsListindexes[0] +=5;
-      lipsListindexes[1] +=5;
-      setLipsListIndexes([lipsListindexes[0], lipsListindexes[1]])
+      if(lipsListindexes[1] < lipProducts.length && searchValue.length === 0) {
+        lipsListindexes[0] +=5;
+        lipsListindexes[1] +=5;
+        setLipsListIndexes([lipsListindexes[0], lipsListindexes[1]])
+      } else if (lipsListindexes[1] < filterLipsCosmetic.length) {
+        lipsListindexes[0] +=5;
+        lipsListindexes[1] +=5;
+        setLipsListIndexes([lipsListindexes[0], lipsListindexes[1]])
+      }
     } else if (rowToMove === "Eyes") {
-      console.log("eyes is moving");
-      eyesListindexes[0] +=5;
-      eyesListindexes[1] +=5;
-      setEyesListIndexes([eyesListindexes[0], eyesListindexes[1]])
+      if (eyesListindexes[1] < eyeProducts.length && searchValue.length === 0) {
+        eyesListindexes[0] +=5;
+        eyesListindexes[1] +=5;
+        setEyesListIndexes([eyesListindexes[0], eyesListindexes[1]])
+      } else if (eyesListindexes[1] < filterEyesCosmetic.length) {
+        eyesListindexes[0] +=5;
+        eyesListindexes[1] +=5;
+        setEyesListIndexes([eyesListindexes[0], eyesListindexes[1]])
+      }
     } else if (rowToMove === "Collection") {
-      collectionindexes[0] +=3
-      collectionindexes[1] +=3
-      setCollectionIndexes([collectionindexes[0], collectionindexes[1]])
+      if (collectionindexes[1] < myCollectionList.length) {
+        collectionindexes[0] +=3
+        collectionindexes[1] +=3
+        setCollectionIndexes([collectionindexes[0], collectionindexes[1]])
+      }
     }
   }
 
   function scrollThroughPreviousItems(rowToMove) {
     if (rowToMove === "Luxury") {
       if (luxuryListindexes[0] > 0) {
-        console.log("luxury is moving");
         luxuryListindexes[0] -=5;
         luxuryListindexes[1] -=5;
         setLuxuryListIndexes([luxuryListindexes[0], luxuryListindexes[1]])
       } 
     } else if (rowToMove === "Face") {
       if (faceListindexes[0] > 0) {
-        console.log("face is moving");
         faceListindexes[0] -=5;
         faceListindexes[1] -=5;
         setFaceListIndexes([faceListindexes[0], faceListindexes[1]])
       }
     } else if (rowToMove === "Lips") {
       if (lipsListindexes[0] > 0) {
-        console.log("lips is moving");
         lipsListindexes[0] -=5;
         lipsListindexes[1] -=5;
         setLipsListIndexes([lipsListindexes[0], lipsListindexes[1]])
@@ -129,7 +148,8 @@ function App() {
   //Row1
   let cosmeticsListCopy = [...cosmeticsList];
   const cosmeticsByHighestPrice = cosmeticsListCopy.sort((a,b) => b.price - a.price)
-  const luxuryCosmeticsList = cosmeticsByHighestPrice.slice(luxuryListindexes[0], luxuryListindexes[1]);
+  const luxuryCosmeticsList = cosmeticsByHighestPrice.filter((luxuryCosmeticsList) => luxuryCosmeticsList.name.toLowerCase().includes(searchValue.toLowerCase()))
+  const filterLuxuryCosmetic = luxuryCosmeticsList.slice(luxuryListindexes[0], luxuryListindexes[1]);
   
   //Row2
   const faceProducts = cosmeticsList.filter((cosmetic) => {
@@ -160,7 +180,7 @@ function App() {
  
  
 // search to recontinue upon completing lists
-  const filterLuxuryCosmetic = luxuryCosmeticsList.filter((luxuryCosmeticsList) => luxuryCosmeticsList.name.toLowerCase().includes(searchValue.toLowerCase()))
+  
   
   
   const updateSearch = ((searchBar) => {setSearchValue(searchBar)})
