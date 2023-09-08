@@ -56,7 +56,8 @@ function MyCollectionCard ({product, onDelete, onSubmitUpdateExpiration}){
             <img src={image} alt={name}/>
             {/* {daysBeforeExp === 0 ? (<h4>EXPIRED</h4>) : (null)} */}
             <div className="collection-content">
-            <h3>{name}</h3>
+                <h3>{name}</h3>
+                {/* {daysBeforeExp === 0 ? <h3>EXPIRED</h3> : null} */}
                 {daysBeforeExp || daysBeforeExp === 0 ? (<p>Expiring in: {daysBeforeExp} day/s</p>) : (<p>Expiring in: </p>)}
                 <form onSubmit={handleSubmit}>
                     <label>Set Expiration: </label>

@@ -1,44 +1,14 @@
 {
   "mycollection": [
     {
-      "name": "cheekathon bronzer & blush palette",
-      "product_type": "bronzer",
-      "brand": "benefit",
-      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/639/original/open-uri20171223-4-1uw9qxu?1514061763",
-      "description": "“kick up your cheeks” blush kit",
-      "dateOfOpening": "",
-      "expiration": "2023-09-10",
-      "id": 1
-    },
-    {
-      "name": "Couture Colour Wardrobe palette",
+      "name": "B Smudged",
       "product_type": "eyeshadow",
-      "brand": "dior",
-      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/697/original/open-uri20171223-4-1tgdgkb?1514062732",
-      "description": "Directly inspired by runway shows, the Couture Colour Wardrobe palette teams fresh and natural colours with vibrant and sophisticated shades to create countless custom makeup looks to suit any moment.",
-      "dateOfOpening": "",
-      "expiration": "2023-09-14",
-      "id": 2
-    },
-    {
-      "name": "Dior Holiday Couture Collection",
-      "product_type": "lipstick",
-      "brand": "dior",
-      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/662/original/open-uri20171223-4-b9oitk?1514062722",
-      "description": "A couture makeup bag with a selection of three iconic Rouge Dior lipsticks to suit any occasion: two different rosy shades with a satiny finish for a romantic look, and the matte version of the famous 999 for flamboyant lips.",
-      "dateOfOpening": "",
-      "expiration": "2023-09-08",
-      "id": 3
-    },
-    {
-      "name": " Realist Invisible Setting Powder",
-      "product_type": "foundation",
-      "brand": "w3llpeople",
-      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/039/original/open-uri20180630-4-rfmkzd?1530390386",
-      "description": "<span style=\"font-weight: 400;\">Keep it real with a polished, soft-focus look using this superfine, loose mineral powder. The healing properties of organic aloe help soothe and calm stressed out skin. Instantly minimize pores, soften imperfections, and creates a matte finish with superfine powder. Use by itself for an air-brushed look, or to set foundation for ultra-long wear.</span><span style=\"font-weight: 400;\">* Set makeup or by itself for matte air-brushed effect</span><span style=\"font-weight: 400;\">* Absorbs excess oil while softening fine lines</span><span style=\"font-weight: 400;\">* Organic aloe creates radiant, rejuvenated skin</span><span style=\"font-weight: 400;\">* Hypoallergenic, Chemical Free, Cruelty Free &amp; Noncomedogenic </span><span style=\"font-weight: 400;\">* EWG Verified for non-toxic health and safety</span><span style=\"font-weight: 400;\">* Free From: Parabens, Gluten, GMO, Phthalates, Sulfates, Fragrance, Pheonoxyethanol, Dimethicone, PEG, Propylene Glycol, Butylene Glycol, Lead, Mineral Oil, Talc</span>",
+      "brand": "sally b's skin yummies",
+      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/038/original/open-uri20180630-4-xhqdne?1530390385",
+      "description": "Let your eyes naturally pop with our B Smudged, a subtle eye color that adds a tint of color to the base of your lashes. An organic, cream eye color, B Smudged eliminates the inevitable uneven line from traditional eyeliners, and does not require expert blending techniques of messy, powder-based shadows. Simply 'smudge' along lash line for color that stays in place for a long lasting look.",
       "dateOfOpening": "",
       "expiration": "",
-      "id": 4
+      "id": 1
     }
   ]
 }

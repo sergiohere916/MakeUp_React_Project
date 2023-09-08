@@ -356,17 +356,29 @@ body {
 
 .expired-item{
     background-color: rgb(173, 173, 173);
-    margin-top: -22px;
-    margin-bottom: -22px;
-    border: 1px solid black;
+    border: 2px solid black;
+    width: 250px;
+
 }
 .expired-item img {
     filter: grayscale(100%);
 }
 
 .collection-item {
-    border: 1px solid black;
+    border: 2px solid  rgb(175, 33, 94);
+    background-color: white;
+    width: 250px
 }
 .collection-content {
-    
+    border-top: 1px solid plum;
+    display: flex;
+    flex-direction: column;
+    object-fit: contain;
+}
+
+.collection-content h3 {
+    text-overflow: ellipsis;
+    font-size: 12px;
+    object-fit: contain;
+    overflow-y: clip;
 }
