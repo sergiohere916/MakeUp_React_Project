@@ -1,14 +1,44 @@
 {
   "mycollection": [
     {
-      "name": "B Smudged",
-      "product_type": "eyeshadow",
-      "brand": "sally b's skin yummies",
-      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/038/original/open-uri20180630-4-xhqdne?1530390385",
-      "description": "Let your eyes naturally pop with our B Smudged, a subtle eye color that adds a tint of color to the base of your lashes. An organic, cream eye color, B Smudged eliminates the inevitable uneven line from traditional eyeliners, and does not require expert blending techniques of messy, powder-based shadows. Simply 'smudge' along lash line for color that stays in place for a long lasting look.",
+      "name": "Simply Red Lip Cream",
+      "product_type": "lipstick",
+      "brand": "nyx",
+      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/885/original/open-uri20171224-4-j5xh6b?1514082436",
+      "description": "A classic red pout never goes out of style! Our Simply Red Lip Cream collection gives you loads of color options varying from deep bright or pure red that you can’t go wrong with.",
       "dateOfOpening": "",
       "expiration": "",
       "id": 1
+    },
+    {
+      "name": "Simply Nude Lip Cream",
+      "product_type": "lipstick",
+      "brand": "nyx",
+      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/884/original/open-uri20171224-4-1b2b0di?1514082434",
+      "description": "Bare is beautiful with our Simply Nude Lip Creams available in six earthy shades. Swipe on this velvety and moisturizing cream to leave your lips with a subtle satin finish.",
+      "dateOfOpening": "",
+      "expiration": "",
+      "id": 2
+    },
+    {
+      "name": "Macaron Lippies",
+      "product_type": "lipstick",
+      "brand": "nyx",
+      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/883/original/open-uri20171224-4-25gmgo?1514082433",
+      "description": "Fantasize in color with our neon and pastel lippies in 12 of the creamiest shades you’ll ever use. Our cruelty-free formula is packed with pigment and has a satin matte finish for long-wearing resilience.",
+      "dateOfOpening": "",
+      "expiration": "",
+      "id": 3
+    },
+    {
+      "name": "Lipstick",
+      "product_type": "lipstick",
+      "brand": "boosh",
+      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/044/original/data?1531071233",
+      "description": "All of our products are free from lead and heavy metals, parabens, phthalates, artificial colourants, and synthetic fragrances.  Boosh lipstick glides on smoothly for clean & protective SPF coverage. They are filled with hydrating oils and butters to preserve and enhance your lips natural surface. Organic sweet orange oil gives a light and cheerful scent.",
+      "dateOfOpening": "",
+      "expiration": "2023-09-08",
+      "id": 4
     }
   ]
 }
