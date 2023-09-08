@@ -1,13 +1,13 @@
 {
   "mycollection": [
     {
-      "name": "Lippie Stix",
-      "product_type": "lipstick",
-      "brand": "colourpop",
-      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/046/original/open-uri20180708-4-1f333k1?1531086651",
-      "description": "Lippie Stix Formula contains Vitamin E, Mango, Avocado, and Shea butter for added comfort and moisture. None of our Lippie formulas contain any nasty ingredients like Parabens or Sulfates.",
+      "name": "Liquid Liner",
+      "product_type": "eyeliner",
+      "brand": "zorah biocosmetiques",
+      "image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/041/original/open-uri20180630-4-1huiv9y?1530390387",
+      "description": "<strong>12 hours of long-lasting</strong> intense color, transfer-free (leaves no trace on crease above the eyelid) <strong>Pure Light Capture®</strong> <strong>minerals</strong> deliver color and radiance. Silky lines and refreshingly light, Pure Argan eyeliner leaves a weightless feel on the eyelids.<p align='LEFT'>Natural cosmetic certified by Ecocert Greenlife according to Ecocert Standard available at: http://cosmetiques.ecocert.com</p>98% of the total ingredients are from natural origin 5% of total ingredients are from organic farming",
       "dateOfOpening": "",
-      "expiration": "2023-09-07",
+      "expiration": "",
       "id": 1
     },
     {
